@@ -1,0 +1,312 @@
+{
+  "guidelines": [
+    {
+      "condition": "type 2 diabetes",
+      "icd10_codes": ["E11"],
+      "snomed_codes": ["44054006"],
+      "aliases": ["t2dm", "diabetes mellitus type 2", "type ii diabetes", "niddm"],
+      "issuing_body": "ADA",
+      "guideline_year": 2024,
+      "summary": "Individualised medical nutrition therapy emphasising carbohydrate quality, fibre intake >=14 g/1000 kcal, and weight management.",
+      "key_targets": {
+        "carbohydrate_g_per_day": "individualised; emphasise low-GI sources",
+        "fibre_g_per_day": ">=25 (women) / >=38 (men)",
+        "saturated_fat_pct_kcal": "<10",
+        "sodium_mg_per_day": "<2300",
+        "added_sugars_pct_kcal": "<10"
+      },
+      "monitoring": ["HbA1c quarterly", "fasting glucose", "lipid panel annually", "renal function annually"],
+      "evidence_source": "ADA Standards of Care 2024",
+      "url": "https://diabetesjournals.org/care/issue/47/Supplement_1"
+    },
+    {
+      "condition": "type 1 diabetes",
+      "icd10_codes": ["E10"],
+      "snomed_codes": ["46635009"],
+      "aliases": ["t1dm", "diabetes mellitus type 1", "iddm", "juvenile diabetes"],
+      "issuing_body": "ADA",
+      "guideline_year": 2024,
+      "summary": "Carbohydrate counting matched to insulin dosing; consistent meal timing for fixed-dose regimens; emphasis on whole foods, fibre, and limited saturated fat.",
+      "key_targets": {
+        "carbohydrate_g_per_day": "individualised with insulin matching",
+        "fibre_g_per_day": ">=25 (women) / >=38 (men)",
+        "saturated_fat_pct_kcal": "<10",
+        "sodium_mg_per_day": "<2300"
+      },
+      "monitoring": ["HbA1c quarterly", "CGM time-in-range >70%", "lipid panel annually", "thyroid and coeliac screen"],
+      "evidence_source": "ADA Standards of Care 2024",
+      "url": "https://diabetesjournals.org/care/issue/47/Supplement_1"
+    },
+    {
+      "condition": "ckd stage 3-5",
+      "icd10_codes": ["N18.3", "N18.4", "N18.5"],
+      "snomed_codes": ["433144002"],
+      "aliases": ["chronic kidney disease", "ckd", "ckd 3", "ckd 4", "ckd 5", "ckd stage 3", "ckd stage 4", "ckd stage 5"],
+      "issuing_body": "KDOQI",
+      "guideline_year": 2020,
+      "summary": "Protein restriction (0.55-0.60 g/kg/day for non-dialysis CKD 3-5), sodium <2300 mg/day, individualised potassium and phosphorus restriction based on labs.",
+      "key_targets": {
+        "protein_g_per_kg": "0.55-0.60 (non-dialysis); 1.0-1.2 (dialysis)",
+        "sodium_mg_per_day": "<2300",
+        "potassium_mg_per_day": "individualised; often <2000-3000",
+        "phosphorus_mg_per_day": "<800-1000",
+        "energy_kcal_per_kg": "25-35"
+      },
+      "monitoring": ["eGFR quarterly", "serum potassium", "serum phosphorus", "PTH", "albumin", "bicarbonate"],
+      "evidence_source": "KDOQI Clinical Practice Guideline for Nutrition in CKD 2020",
+      "url": "https://www.kidney.org/professionals/guidelines/guidelines_commentaries/nutrition-ckd"
+    },
+    {
+      "condition": "hypertension",
+      "icd10_codes": ["I10"],
+      "snomed_codes": ["38341003"],
+      "aliases": ["high blood pressure", "htn", "essential hypertension"],
+      "issuing_body": "AHA/ACC",
+      "guideline_year": 2017,
+      "summary": "DASH dietary pattern: rich in fruits, vegetables, whole grains, low-fat dairy; sodium <2300 mg/day (ideally <1500); potassium 3500-5000 mg/day if renal function permits.",
+      "key_targets": {
+        "sodium_mg_per_day": "<2300 (ideal <1500)",
+        "potassium_mg_per_day": "3500-5000",
+        "saturated_fat_pct_kcal": "<6",
+        "alcohol_drinks_per_day": "<=2 (men) / <=1 (women)"
+      },
+      "monitoring": ["BP weekly during titration", "renal function", "serum potassium if on RAAS blockade"],
+      "evidence_source": "AHA/ACC Hypertension Guideline 2017; DASH-Sodium trial",
+      "url": "https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065"
+    },
+    {
+      "condition": "heart failure",
+      "icd10_codes": ["I50"],
+      "snomed_codes": ["84114007"],
+      "aliases": ["chf", "congestive heart failure", "hfref", "hfpef"],
+      "issuing_body": "AHA/ACC/HFSA",
+      "guideline_year": 2022,
+      "summary": "Sodium restriction <2000-3000 mg/day, fluid restriction 1.5-2 L/day in advanced HF, Mediterranean-style pattern, monitor for cardiac cachexia.",
+      "key_targets": {
+        "sodium_mg_per_day": "<2000-3000",
+        "fluid_l_per_day": "1.5-2.0 if advanced or hyponatraemic",
+        "alcohol": "avoid in alcoholic cardiomyopathy",
+        "energy": "adequate to prevent cachexia"
+      },
+      "monitoring": ["daily weights", "serum sodium", "renal function", "BNP/NT-proBNP"],
+      "evidence_source": "AHA/ACC/HFSA Heart Failure Guideline 2022",
+      "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001063"
+    },
+    {
+      "condition": "dyslipidaemia",
+      "icd10_codes": ["E78"],
+      "snomed_codes": ["370992007"],
+      "aliases": ["dyslipidemia", "hyperlipidaemia", "hyperlipidemia", "high cholesterol"],
+      "issuing_body": "AHA/ACC",
+      "guideline_year": 2018,
+      "summary": "Heart-healthy dietary pattern (Mediterranean or DASH), saturated fat <6% kcal, increase soluble fibre and plant sterols, eliminate trans fats.",
+      "key_targets": {
+        "saturated_fat_pct_kcal": "<6",
+        "trans_fat": "avoid",
+        "soluble_fibre_g_per_day": "5-10",
+        "plant_sterols_g_per_day": "2"
+      },
+      "monitoring": ["lipid panel q3-12 months", "LFTs if on statin", "ASCVD risk score"],
+      "evidence_source": "AHA/ACC Cholesterol Guideline 2018",
+      "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000000625"
+    },
+    {
+      "condition": "obesity",
+      "icd10_codes": ["E66"],
+      "snomed_codes": ["414916001"],
+      "aliases": ["overweight", "bmi >= 30", "class i obesity", "class ii obesity", "class iii obesity"],
+      "issuing_body": "AACE/Obesity Society",
+      "guideline_year": 2016,
+      "summary": "Energy deficit 500-750 kcal/day producing 5-10% weight loss over 6 months; structured meal plan with high protein, high fibre, low energy density.",
+      "key_targets": {
+        "energy_deficit_kcal_per_day": "500-750",
+        "protein_g_per_kg": "1.2-1.6",
+        "fibre_g_per_day": ">=25-38",
+        "weight_loss_percent_6mo": "5-10"
+      },
+      "monitoring": ["weight every 2-4 weeks", "waist circumference", "metabolic panel q3-6 months"],
+      "evidence_source": "AACE/ACE Obesity Clinical Practice Guidelines 2016",
+      "url": "https://www.aace.com/disease-and-conditions/obesity"
+    },
+    {
+      "condition": "nafld",
+      "icd10_codes": ["K76.0"],
+      "snomed_codes": ["197321007"],
+      "aliases": ["non-alcoholic fatty liver disease", "nash", "masld", "metabolic dysfunction-associated steatotic liver disease"],
+      "issuing_body": "AASLD",
+      "guideline_year": 2023,
+      "summary": "Mediterranean dietary pattern, weight loss 7-10% for steatohepatitis resolution, restrict added sugars and fructose, limit saturated fat, no alcohol.",
+      "key_targets": {
+        "weight_loss_percent": "7-10",
+        "added_sugars_pct_kcal": "<10",
+        "fructose": "minimise sugar-sweetened beverages",
+        "alcohol": "abstain",
+        "saturated_fat_pct_kcal": "<10"
+      },
+      "monitoring": ["LFTs q6 months", "FibroScan or MRE annually", "HbA1c", "lipid panel"],
+      "evidence_source": "AASLD Practice Guidance on NAFLD 2023",
+      "url": "https://journals.lww.com/hep/Fulltext/2023/05000/AASLD_Practice_Guidance_on_the_clinical_assessment.31.aspx"
+    },
+    {
+      "condition": "ibs",
+      "icd10_codes": ["K58"],
+      "snomed_codes": ["10743008"],
+      "aliases": ["irritable bowel syndrome", "ibs-d", "ibs-c", "ibs-m"],
+      "issuing_body": "Monash University / British Dietetic Association",
+      "guideline_year": 2023,
+      "summary": "Three-phase low-FODMAP protocol (restriction 2-6 weeks, structured reintroduction, personalisation) under dietitian supervision; first-line dietary advice includes regular meals and limiting caffeine, alcohol, and fatty foods.",
+      "key_targets": {
+        "fodmap_phase_1_weeks": "2-6",
+        "caffeine_mg_per_day": "<=400",
+        "alcohol": "minimise",
+        "fibre": "soluble fibre preferred (psyllium)"
+      },
+      "monitoring": ["symptom diary", "Bristol stool chart", "weight", "QOL questionnaire"],
+      "evidence_source": "Monash University Low-FODMAP Diet 2023; BDA Guidelines",
+      "url": "https://www.monashfodmap.com"
+    },
+    {
+      "condition": "coeliac disease",
+      "icd10_codes": ["K90.0"],
+      "snomed_codes": ["396331005"],
+      "aliases": ["celiac disease", "celiac", "coeliac", "gluten-sensitive enteropathy"],
+      "issuing_body": "ACG",
+      "guideline_year": 2023,
+      "summary": "Lifelong strict gluten-free diet (<20 ppm gluten); avoid wheat, barley, rye, and contaminated oats; ensure adequate fibre, iron, folate, calcium, and vitamin D.",
+      "key_targets": {
+        "gluten_ppm_max": "<20",
+        "fibre_g_per_day": ">=25",
+        "iron": "monitor and supplement if deficient",
+        "calcium_mg_per_day": "1000-1200",
+        "vitamin_d_iu_per_day": "600-800"
+      },
+      "monitoring": ["tTG-IgA at 6 and 12 months", "DEXA scan", "iron studies, B12, folate, vitamin D"],
+      "evidence_source": "ACG Clinical Guideline: Diagnosis and Management of Celiac Disease 2023",
+      "url": "https://journals.lww.com/ajg/fulltext/2023/01000/american_college_of_gastroenterology_guidelines.14.aspx"
+    },
+    {
+      "condition": "gout",
+      "icd10_codes": ["M10"],
+      "snomed_codes": ["90560007"],
+      "aliases": ["gouty arthritis", "hyperuricaemia", "hyperuricemia"],
+      "issuing_body": "ACR",
+      "guideline_year": 2020,
+      "summary": "Limit purine-rich foods (organ meats, shellfish, anchovies), avoid alcohol (especially beer), avoid sugar-sweetened beverages and fructose, encourage low-fat dairy and Mediterranean pattern.",
+      "key_targets": {
+        "purine_rich_meats": "minimise",
+        "alcohol": "avoid beer; limit spirits/wine",
+        "sugar_sweetened_beverages": "avoid",
+        "low_fat_dairy_servings_per_day": ">=2",
+        "water_l_per_day": ">=2"
+      },
+      "monitoring": ["serum uric acid (target <6 mg/dL)", "renal function"],
+      "evidence_source": "ACR Guideline for the Management of Gout 2020",
+      "url": "https://www.rheumatology.org/Practice-Quality/Clinical-Support/Clinical-Practice-Guidelines/Gout"
+    },
+    {
+      "condition": "pregnancy",
+      "icd10_codes": ["Z33"],
+      "snomed_codes": ["77386006"],
+      "aliases": ["pregnant", "gestation", "prenatal", "antenatal"],
+      "issuing_body": "ACOG / IOM",
+      "guideline_year": 2023,
+      "summary": "Energy +340 kcal/day in T2 and +452 kcal/day in T3; folic acid 600 mcg/day, iron 27 mg/day, iodine 220 mcg/day, DHA 200 mg/day; avoid high-mercury fish, raw seafood, unpasteurised dairy, deli meats.",
+      "key_targets": {
+        "energy_kcal_extra_t2": "340",
+        "energy_kcal_extra_t3": "452",
+        "protein_g_per_day": ">=71",
+        "folate_mcg_per_day": "600",
+        "iron_mg_per_day": "27",
+        "iodine_mcg_per_day": "220",
+        "calcium_mg_per_day": "1000",
+        "dha_mg_per_day": "200"
+      },
+      "monitoring": ["weight gain per IOM trimester targets", "Hgb each trimester", "GDM screen 24-28 weeks"],
+      "evidence_source": "ACOG Nutrition During Pregnancy 2023; IOM 2009",
+      "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion"
+    },
+    {
+      "condition": "epilepsy",
+      "icd10_codes": ["G40"],
+      "snomed_codes": ["84757009", "313307000", "230456007"],
+      "aliases": [
+        "epilepsy",
+        "seizure disorder",
+        "history of seizure",
+        "history of single seizure",
+        "history of single seizure (situation)",
+        "convulsions",
+        "epileptic"
+      ],
+      "issuing_body": "ILAE / NICE",
+      "guideline_year": 2022,
+      "summary": "Maintain consistent meal timing to support antiepileptic medication absorption; avoid alcohol (lowers seizure threshold and interacts with antiepileptics). Long-term antiepileptic therapy depletes vitamin D and calcium, increasing osteoporosis risk; supplementation typically required. Modified Atkins or low-glycemic-index diet is an evidence-based adjunct for refractory epilepsy. Avoid grapefruit and grapefruit juice if on diazepam, carbamazepine, or other CYP3A4-metabolised antiepileptics.",
+      "key_targets": {
+        "vitamin_d_iu_per_day": "800-2000",
+        "calcium_mg_per_day": "1000-1200",
+        "alcohol": "avoid",
+        "grapefruit": "avoid if on CYP3A4-metabolised antiepileptics",
+        "meal_timing": "consistent intervals matched to medication schedule",
+        "fluids_ml_per_day": ">=2000",
+        "fibre_g_per_day": ">=25 (constipation common with antiepileptics)"
+      },
+      "monitoring": [
+        "vitamin D (25-OH) annually on long-term antiepileptics",
+        "DEXA scan every 2-5 years",
+        "serum calcium and ALP annually",
+        "medication levels per neurologist schedule"
+      ],
+      "evidence_source": "ILAE Practice Guidelines 2017; NICE NG217 Epilepsies 2022; AAN Vitamin D Practice Guideline 2018",
+      "url": "https://www.nice.org.uk/guidance/ng217"
+    },
+    {
+      "condition": "attention deficit disorder",
+      "icd10_codes": ["F90"],
+      "snomed_codes": ["406506008", "192127007"],
+      "aliases": [
+        "adhd",
+        "attention deficit disorder",
+        "attention deficit hyperactivity disorder",
+        "child attention deficit disorder",
+        "hyperkinetic disorder",
+        "add"
+      ],
+      "issuing_body": "AAP / NICE",
+      "guideline_year": 2019,
+      "summary": "Limited but emerging evidence supports omega-3 supplementation (EPA + DHA) for symptom modulation. Adequate breakfast protein supports stimulant medication efficacy and reduces post-medication appetite suppression issues. Limit artificial food colourings and sodium benzoate, which are associated with increased hyperactivity in some children. Consistent meal timing helps offset stimulant-related appetite changes. Iron and zinc deficiency are more common in ADHD; screen and supplement if low.",
+      "key_targets": {
+        "omega_3_mg_per_day": "1000-2000",
+        "epa_dha_ratio": "2:1 favouring EPA",
+        "protein_breakfast_g": ">=20",
+        "iron_mg_per_day": "8-11 (sex/age dependent)",
+        "zinc_mg_per_day": "8-11",
+        "artificial_food_colours": "limit",
+        "sodium_benzoate": "limit",
+        "caffeine": "limit (interacts with stimulant medications)"
+      },
+      "monitoring": [
+        "weight and height quarterly if on stimulants",
+        "ferritin and serum zinc annually",
+        "appetite and meal intake patterns",
+        "sleep quality (often disrupted on stimulants)"
+      ],
+      "evidence_source": "AAP Clinical Practice Guideline ADHD 2019; NICE NG87 ADHD 2018; Cochrane PUFA review 2012",
+      "url": "https://publications.aap.org/pediatrics/article/144/4/e20192528"
+    },
+    {
+      "condition": "perennial allergic rhinitis",
+      "icd10_codes": ["J30"],
+      "snomed_codes": ["446096008"],
+      "aliases": ["allergic rhinitis", "perennial allergic rhinitis", "hay fever", "rhinitis"],
+      "issuing_body": "AAAAI / EAACI",
+      "guideline_year": 2023,
+      "summary": "No specific dietary restrictions. A general anti-inflammatory pattern (e.g. Mediterranean) may modestly reduce symptom burden. Watch for cross-reactive food allergens in patients with pollen allergies (oral allergy syndrome).",
+      "key_targets": {
+        "anti_inflammatory_foods": "emphasise"
+      },
+      "monitoring": [],
+      "evidence_source": "AAAAI Practice Parameter 2023",
+      "url": "https://www.aaaai.org/practice-resources/practice-parameters"
+    }
+  ]
+}

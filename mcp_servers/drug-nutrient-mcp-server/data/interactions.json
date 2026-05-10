@@ -1,0 +1,747 @@
+{
+  "interactions": [
+    {
+      "id": "int_001",
+      "drug": {
+        "name": "warfarin",
+        "rxnorm": "11289",
+        "drug_class": "anticoagulant",
+        "aliases": ["coumadin", "jantoven"]
+      },
+      "food_or_nutrient": {
+        "type": "nutrient",
+        "name": "vitamin K",
+        "keywords": ["vitamin k", "kale", "spinach", "collard greens", "broccoli", "brussels sprouts", "swiss chard", "turnip greens"]
+      },
+      "severity": "advisory",
+      "mechanism": "Vitamin K antagonises warfarin's anticoagulant effect by replenishing the clotting factor cofactor warfarin blocks.",
+      "clinical_effect": "Reduced INR, increased clotting risk if intake fluctuates.",
+      "recommendation": "Maintain consistent daily vitamin K intake rather than avoiding leafy greens entirely.",
+      "evidence_source": "FDA label; Holbrook et al., Arch Intern Med 2005",
+      "substitutions": [
+        {"replace": "kale", "with": "lettuce", "rationale": "Far lower vitamin K (~10 ug/cup vs 500 ug/cup)"},
+        {"replace": "spinach", "with": "zucchini", "rationale": "Negligible vitamin K"},
+        {"replace": "collard greens", "with": "cabbage", "rationale": "Substantially lower vitamin K per cooked cup"}
+      ]
+    },
+    {
+      "id": "int_002",
+      "drug": {
+        "name": "warfarin",
+        "rxnorm": "11289",
+        "drug_class": "anticoagulant",
+        "aliases": ["coumadin", "jantoven"]
+      },
+      "food_or_nutrient": {
+        "type": "food",
+        "name": "cranberry",
+        "keywords": ["cranberry", "cranberry juice"]
+      },
+      "severity": "moderate",
+      "mechanism": "Cranberry flavonoids inhibit CYP2C9, the principal enzyme that metabolises S-warfarin, raising plasma warfarin concentrations.",
+      "clinical_effect": "Elevated INR with bleeding risk reported in case series with high cranberry juice intake.",
+      "recommendation": "Limit cranberry juice to occasional small servings; monitor INR closely if regular intake is desired.",
+      "evidence_source": "FDA warfarin label; Suvarna et al., BMJ 2003 (case report)",
+      "substitutions": [
+        {"replace": "cranberry juice", "with": "pomegranate juice", "rationale": "Comparable tartness without documented CYP2C9 inhibition at typical intake"}
+      ]
+    },
+    {
+      "id": "int_003",
+      "drug": {
+        "name": "phenelzine",
+        "rxnorm": "8123",
+        "drug_class": "MAO inhibitor",
+        "aliases": ["nardil"]
+      },
+      "food_or_nutrient": {
+        "type": "nutrient",
+        "name": "tyramine",
+        "keywords": ["tyramine", "aged cheese", "cured meat", "salami", "pepperoni", "sauerkraut", "soy sauce", "tap beer", "fava beans", "miso"]
+      },
+      "severity": "contraindicated",
+      "mechanism": "MAO inhibitors block the deamination of dietary tyramine, allowing systemic tyramine to displace norepinephrine and trigger a hypertensive crisis.",
+      "clinical_effect": "Severe headache, hypertensive crisis, intracranial hemorrhage, possible death.",
+      "recommendation": "Strictly avoid tyramine-rich foods during therapy and for 2 weeks after discontinuation.",
+      "evidence_source": "FDA Nardil label; Gillman, Br J Anaesth 2005",
+      "substitutions": [
+        {"replace": "aged cheese", "with": "fresh mozzarella or cottage cheese", "rationale": "Negligible tyramine in non-aged dairy"},
+        {"replace": "salami", "with": "freshly cooked chicken", "rationale": "No fermentation or aging"},
+        {"replace": "soy sauce", "with": "coconut aminos", "rationale": "Not fermented from soy proteins; very low tyramine"}
+      ]
+    },
+    {
+      "id": "int_004",
+      "drug": {
+        "name": "tranylcypromine",
+        "rxnorm": "10827",
+        "drug_class": "MAO inhibitor",
+        "aliases": ["parnate"]
+      },
+      "food_or_nutrient": {
+        "type": "food_class",
+        "name": "aged and fermented foods",
+        "keywords": ["aged cheese", "blue cheese", "cheddar", "tap beer", "kimchi", "miso", "fermented", "smoked fish", "pickled herring"]
+      },
+      "severity": "contraindicated",
+      "mechanism": "Same MAO-mediated tyramine accumulation; tranylcypromine is a particularly potent and irreversible MAO-A/B inhibitor.",
+      "clinical_effect": "Hypertensive crisis with stroke risk.",
+      "recommendation": "Avoid all aged, fermented, smoked, pickled, or spoiled protein-containing foods. Provide patient with full dietary list.",
+      "evidence_source": "FDA Parnate label",
+      "substitutions": [
+        {"replace": "blue cheese", "with": "fresh ricotta", "rationale": "No microbial aging"},
+        {"replace": "kimchi", "with": "fresh slaw with rice vinegar", "rationale": "Acidified rather than fermented"}
+      ]
+    },
+    {
+      "id": "int_005",
+      "drug": {
+        "name": "amlodipine",
+        "rxnorm": "17767",
+        "drug_class": "calcium channel blocker",
+        "aliases": ["norvasc"]
+      },
+      "food_or_nutrient": {
+        "type": "food",
+        "name": "grapefruit",
+        "keywords": ["grapefruit", "grapefruit juice", "pomelo", "seville orange"]
+      },
+      "severity": "significant",
+      "mechanism": "Furanocoumarins in grapefruit irreversibly inhibit intestinal CYP3A4, increasing oral bioavailability of dihydropyridine CCBs.",
+      "clinical_effect": "Excessive vasodilation, hypotension, peripheral edema, reflex tachycardia.",
+      "recommendation": "Avoid grapefruit and grapefruit juice during amlodipine therapy.",
+      "evidence_source": "Bailey et al., CMAJ 2013; FDA Norvasc label",
+      "substitutions": [
+        {"replace": "grapefruit juice", "with": "orange juice", "rationale": "Sweet oranges do not contain the relevant furanocoumarins"},
+        {"replace": "grapefruit", "with": "navel orange or tangerine", "rationale": "No CYP3A4 inhibition"}
+      ]
+    },
+    {
+      "id": "int_006",
+      "drug": {
+        "name": "simvastatin",
+        "rxnorm": "36567",
+        "drug_class": "statin",
+        "aliases": ["zocor"]
+      },
+      "food_or_nutrient": {
+        "type": "food",
+        "name": "grapefruit",
+        "keywords": ["grapefruit", "grapefruit juice", "pomelo", "seville orange"]
+      },
+      "severity": "significant",
+      "mechanism": "Grapefruit furanocoumarins inhibit intestinal CYP3A4, dramatically raising simvastatin AUC (up to 3.6-fold).",
+      "clinical_effect": "Markedly elevated risk of myopathy and rhabdomyolysis.",
+      "recommendation": "Avoid grapefruit completely while on simvastatin; consider switching to pravastatin or rosuvastatin if grapefruit intake is essential.",
+      "evidence_source": "FDA Zocor label; Lilja et al., Clin Pharmacol Ther 2004",
+      "substitutions": [
+        {"replace": "grapefruit", "with": "orange or berries", "rationale": "Comparable vitamin C without CYP3A4 inhibition"}
+      ]
+    },
+    {
+      "id": "int_007",
+      "drug": {
+        "name": "atorvastatin",
+        "rxnorm": "83367",
+        "drug_class": "statin",
+        "aliases": ["lipitor"]
+      },
+      "food_or_nutrient": {
+        "type": "food",
+        "name": "grapefruit",
+        "keywords": ["grapefruit", "grapefruit juice", "pomelo"]
+      },
+      "severity": "moderate",
+      "mechanism": "CYP3A4 inhibition raises atorvastatin exposure, though to a lesser degree than simvastatin.",
+      "clinical_effect": "Increased risk of myalgia and transaminase elevation.",
+      "recommendation": "Limit grapefruit to small, infrequent servings; avoid altogether at higher atorvastatin doses (>=40 mg/day).",
+      "evidence_source": "FDA Lipitor label",
+      "substitutions": [
+        {"replace": "grapefruit juice", "with": "orange juice", "rationale": "No furanocoumarins"}
+      ]
+    },
+    {
+      "id": "int_008",
+      "drug": {
+        "name": "tetracycline",
+        "rxnorm": "10395",
+        "drug_class": "tetracycline antibiotic",
+        "aliases": ["sumycin"]
+      },
+      "food_or_nutrient": {
+        "type": "nutrient",
+        "name": "calcium",
+        "keywords": ["calcium", "milk", "yogurt", "cheese", "dairy", "calcium-fortified", "antacid"]
+      },
+      "severity": "significant",
+      "mechanism": "Divalent cations (Ca2+, Mg2+, Fe2+) chelate tetracyclines in the gut, forming insoluble complexes that are not absorbed.",
+      "clinical_effect": "Dramatically reduced antibiotic plasma levels; treatment failure.",
+      "recommendation": "Take tetracycline at least 2 hours before or 4 hours after dairy products, calcium supplements, or antacids.",
+      "evidence_source": "FDA tetracycline label; Neuvonen, Drugs 1976",
+      "substitutions": [
+        {"replace": "milk with medication", "with": "water with medication, dairy 2+ hours later", "rationale": "Separating intake avoids chelation"}
+      ]
+    },
+    {
+      "id": "int_009",
+      "drug": {
+        "name": "doxycycline",
+        "rxnorm": "3640",
+        "drug_class": "tetracycline antibiotic",
+        "aliases": ["vibramycin", "doryx"]
+      },
+      "food_or_nutrient": {
+        "type": "nutrient",
+        "name": "calcium",
+        "keywords": ["calcium", "milk", "yogurt", "cheese", "dairy", "antacid"]
+      },
+      "severity": "moderate",
+      "mechanism": "Divalent cation chelation reduces doxycycline absorption, though less severely than tetracycline.",
+      "clinical_effect": "Reduced antibiotic exposure; possible treatment failure.",
+      "recommendation": "Separate doxycycline from dairy and calcium supplements by at least 2 hours.",
+      "evidence_source": "FDA Vibramycin label",
+      "substitutions": [
+        {"replace": "milk with medication", "with": "water with medication", "rationale": "Avoids chelation while still allowing dairy at other times"}
+      ]
+    },
+    {
+      "id": "int_010",
+      "drug": {
+        "name": "ciprofloxacin",
+        "rxnorm": "2551",
+        "drug_class": "fluoroquinolone",
+        "aliases": ["cipro"]
+      },
+      "food_or_nutrient": {
+        "type": "nutrient",
+        "name": "calcium",
+        "keywords": ["calcium", "milk", "yogurt", "cheese", "dairy", "antacid", "iron", "magnesium", "zinc"]
+      },
+      "severity": "significant",
+      "mechanism": "Fluoroquinolones chelate divalent and trivalent cations in the GI tract, blocking absorption.",
+      "clinical_effect": "Subtherapeutic antibiotic levels and treatment failure.",
+      "recommendation": "Take ciprofloxacin 2 hours before or 6 hours after dairy, antacids, iron, or multivitamins with minerals.",
+      "evidence_source": "FDA Cipro label; Neuvonen et al., Antimicrob Agents Chemother 1991",
+      "substitutions": [
+        {"replace": "yogurt with medication", "with": "water with medication", "rationale": "Avoids cation chelation; yogurt may be consumed >6 hours later"}
+      ]
+    },
+    {
+      "id": "int_011",
+      "drug": {
+        "name": "levofloxacin",
+        "rxnorm": "82122",
+        "drug_class": "fluoroquinolone",
+        "aliases": ["levaquin"]
+      },
+      "food_or_nutrient": {
+        "type": "nutrient",
+        "name": "calcium",
+        "keywords": ["calcium", "milk", "dairy", "antacid", "iron", "magnesium", "zinc"]
+      },
+      "severity": "significant",
+      "mechanism": "Same divalent/trivalent cation chelation that affects ciprofloxacin.",
+      "clinical_effect": "Reduced absorption and possible therapeutic failure.",
+      "recommendation": "Take levofloxacin 2 hours before or 2 hours after antacids, sucralfate, dairy, or mineral supplements.",
+      "evidence_source": "FDA Levaquin label",
+      "substitutions": [
+        {"replace": "dairy with medication", "with": "water with medication", "rationale": "Avoid simultaneous chelating ions"}
+      ]
+    },
+    {
+      "id": "int_012",
+      "drug": {
+        "name": "levothyroxine",
+        "rxnorm": "10582",
+        "drug_class": "thyroid hormone",
+        "aliases": ["synthroid", "levoxyl", "tirosint"]
+      },
+      "food_or_nutrient": {
+        "type": "food",
+        "name": "soy",
+        "keywords": ["soy", "soybean", "soy milk", "tofu", "edamame", "tempeh", "soy protein"]
+      },
+      "severity": "significant",
+      "mechanism": "Soy isoflavones bind levothyroxine in the gut and inhibit its absorption.",
+      "clinical_effect": "Subtherapeutic thyroid hormone levels, persistent hypothyroid symptoms, elevated TSH.",
+      "recommendation": "Take levothyroxine on an empty stomach and separate from soy-containing foods or supplements by at least 4 hours.",
+      "evidence_source": "Bell & Ovalle, Endocr Pract 2001; FDA Synthroid label",
+      "substitutions": [
+        {"replace": "soy milk", "with": "lactose-free dairy milk or oat milk", "rationale": "No isoflavones; consume >=4 hours from dose"}
+      ]
+    },
+    {
+      "id": "int_013",
+      "drug": {
+        "name": "levothyroxine",
+        "rxnorm": "10582",
+        "drug_class": "thyroid hormone",
+        "aliases": ["synthroid", "levoxyl"]
+      },
+      "food_or_nutrient": {
+        "type": "nutrient",
+        "name": "calcium",
+        "keywords": ["calcium", "calcium carbonate", "milk", "yogurt", "cheese", "antacid"]
+      },
+      "severity": "significant",
+      "mechanism": "Calcium binds levothyroxine in the gut, forming a non-absorbable complex.",
+      "clinical_effect": "Reduced T4 absorption and rising TSH.",
+      "recommendation": "Separate calcium-containing foods or supplements from levothyroxine by at least 4 hours.",
+      "evidence_source": "Singh et al., JAMA 2000",
+      "substitutions": [
+        {"replace": "calcium-fortified breakfast with medication", "with": "plain water 30-60 min before breakfast", "rationale": "Maintains absorption window"}
+      ]
+    },
+    {
+      "id": "int_014",
+      "drug": {
+        "name": "levothyroxine",
+        "rxnorm": "10582",
+        "drug_class": "thyroid hormone",
+        "aliases": ["synthroid"]
+      },
+      "food_or_nutrient": {
+        "type": "nutrient",
+        "name": "fiber",
+        "keywords": ["fiber", "high-fiber", "bran", "psyllium", "oat bran"]
+      },
+      "severity": "moderate",
+      "mechanism": "Soluble fiber adsorbs levothyroxine in the gut, decreasing systemic absorption.",
+      "clinical_effect": "Erratic thyroid control if fiber intake is inconsistent.",
+      "recommendation": "Take levothyroxine on an empty stomach with water; allow 4 hours before high-fiber meals or psyllium.",
+      "evidence_source": "Liel et al., Am J Med 1996",
+      "substitutions": []
+    },
+    {
+      "id": "int_015",
+      "drug": {
+        "name": "lisinopril",
+        "rxnorm": "29046",
+        "drug_class": "ACE inhibitor",
+        "aliases": ["zestril", "prinivil"]
+      },
+      "food_or_nutrient": {
+        "type": "nutrient",
+        "name": "potassium",
+        "keywords": ["potassium", "salt substitute", "banana", "orange juice", "coconut water", "potatoes", "tomato", "spinach", "avocado"]
+      },
+      "severity": "significant",
+      "mechanism": "ACE inhibitors reduce aldosterone-driven potassium excretion; concurrent high potassium intake or potassium-based salt substitutes can drive serum K+ above 5.5 mEq/L.",
+      "clinical_effect": "Hyperkalemia with risk of cardiac arrhythmia.",
+      "recommendation": "Avoid potassium-containing salt substitutes; do not start potassium supplements without monitoring; review high-potassium food intake especially in CKD.",
+      "evidence_source": "FDA lisinopril label; Palmer, NEJM 2004",
+      "substitutions": [
+        {"replace": "potassium chloride salt substitute", "with": "herb and citrus seasoning blends", "rationale": "Reduces sodium without adding potassium"}
+      ]
+    },
+    {
+      "id": "int_016",
+      "drug": {
+        "name": "enalapril",
+        "rxnorm": "3827",
+        "drug_class": "ACE inhibitor",
+        "aliases": ["vasotec"]
+      },
+      "food_or_nutrient": {
+        "type": "nutrient",
+        "name": "potassium",
+        "keywords": ["potassium", "salt substitute", "banana", "orange juice", "coconut water"]
+      },
+      "severity": "significant",
+      "mechanism": "ACE inhibition decreases aldosterone, raising serum potassium.",
+      "clinical_effect": "Hyperkalemia risk, especially with concurrent potassium-sparing diuretics or CKD.",
+      "recommendation": "Avoid potassium salt substitutes; review supplements; routinely monitor serum potassium.",
+      "evidence_source": "FDA Vasotec label",
+      "substitutions": [
+        {"replace": "potassium-based salt substitute", "with": "lemon juice or herbs", "rationale": "Flavor without potassium load"}
+      ]
+    },
+    {
+      "id": "int_017",
+      "drug": {
+        "name": "metformin",
+        "rxnorm": "6809",
+        "drug_class": "biguanide",
+        "aliases": ["glucophage", "glumetza", "fortamet"]
+      },
+      "food_or_nutrient": {
+        "type": "food",
+        "name": "alcohol",
+        "keywords": ["alcohol", "beer", "wine", "liquor", "ethanol"]
+      },
+      "severity": "moderate",
+      "mechanism": "Alcohol potentiates metformin's effect on lactate metabolism, raising the risk of lactic acidosis, and can independently cause hypoglycemia.",
+      "clinical_effect": "Lactic acidosis (rare but life-threatening); hypoglycemia.",
+      "recommendation": "Avoid acute heavy alcohol intake; limit chronic intake to <=1 drink/day for women, <=2 for men, with meals.",
+      "evidence_source": "FDA Glucophage label",
+      "substitutions": [
+        {"replace": "beer/wine with meals", "with": "sparkling water with citrus", "rationale": "Eliminates lactate and hypoglycemia risk"}
+      ]
+    },
+    {
+      "id": "int_018",
+      "drug": {
+        "name": "linezolid",
+        "rxnorm": "67108",
+        "drug_class": "MAO inhibitor",
+        "aliases": ["zyvox"]
+      },
+      "food_or_nutrient": {
+        "type": "nutrient",
+        "name": "tyramine",
+        "keywords": ["tyramine", "aged cheese", "cured meat", "salami", "soy sauce", "tap beer", "fava beans", "sauerkraut", "miso"]
+      },
+      "severity": "contraindicated",
+      "mechanism": "Linezolid is a reversible MAO inhibitor; dietary tyramine cannot be deaminated and triggers a hypertensive reaction.",
+      "clinical_effect": "Hypertensive crisis.",
+      "recommendation": "Limit dietary tyramine to <100 mg per meal during therapy; avoid aged, fermented, pickled, or spoiled foods.",
+      "evidence_source": "FDA Zyvox label",
+      "substitutions": [
+        {"replace": "aged cheese", "with": "fresh mozzarella", "rationale": "Tyramine well below threshold"},
+        {"replace": "salami sandwich", "with": "fresh roast turkey sandwich", "rationale": "No aging"}
+      ]
+    },
+    {
+      "id": "int_019",
+      "drug": {
+        "name": "digoxin",
+        "rxnorm": "3407",
+        "drug_class": "cardiac glycoside",
+        "aliases": ["lanoxin"]
+      },
+      "food_or_nutrient": {
+        "type": "nutrient",
+        "name": "fiber",
+        "keywords": ["fiber", "high-fiber", "bran", "psyllium", "wheat bran", "oat bran"]
+      },
+      "severity": "moderate",
+      "mechanism": "Soluble and insoluble fibers bind digoxin in the gut, decreasing oral bioavailability.",
+      "clinical_effect": "Subtherapeutic digoxin levels and loss of rate control or contractility benefit.",
+      "recommendation": "Separate digoxin doses from high-fiber meals or psyllium by at least 2 hours.",
+      "evidence_source": "Brown et al., J Clin Pharmacol 1985",
+      "substitutions": []
+    },
+    {
+      "id": "int_020",
+      "drug": {
+        "name": "alendronate",
+        "rxnorm": "519",
+        "drug_class": "bisphosphonate",
+        "aliases": ["fosamax"]
+      },
+      "food_or_nutrient": {
+        "type": "nutrient",
+        "name": "calcium",
+        "keywords": ["calcium", "milk", "yogurt", "cheese", "dairy", "mineral water", "fortified juice"]
+      },
+      "severity": "significant",
+      "mechanism": "Calcium and other polyvalent cations chelate bisphosphonates and prevent absorption (oral bioavailability is already <1%).",
+      "clinical_effect": "Loss of antiresorptive effect; treatment failure.",
+      "recommendation": "Take alendronate first thing in morning with plain water only; wait at least 30 minutes before any food, beverage, or other medication.",
+      "evidence_source": "FDA Fosamax label",
+      "substitutions": [
+        {"replace": "morning latte with medication", "with": "plain water with medication; coffee 30+ min later", "rationale": "Preserves bioavailability"}
+      ]
+    },
+    {
+      "id": "int_021",
+      "drug": {
+        "name": "alendronate",
+        "rxnorm": "519",
+        "drug_class": "bisphosphonate",
+        "aliases": ["fosamax"]
+      },
+      "food_or_nutrient": {
+        "type": "food",
+        "name": "coffee",
+        "keywords": ["coffee", "espresso", "tea", "juice", "mineral water"]
+      },
+      "severity": "moderate",
+      "mechanism": "Coffee and orange juice independently reduce alendronate absorption by ~60% even without polyvalent cations.",
+      "clinical_effect": "Reduced antiresorptive efficacy.",
+      "recommendation": "Take with plain tap water only; wait at least 30 minutes before coffee, tea, or juice.",
+      "evidence_source": "Gertz et al., Clin Pharmacol Ther 1995",
+      "substitutions": []
+    },
+    {
+      "id": "int_022",
+      "drug": {
+        "name": "ferrous sulfate",
+        "rxnorm": "4493",
+        "drug_class": "iron supplement",
+        "aliases": ["feosol", "slow fe"]
+      },
+      "food_or_nutrient": {
+        "type": "food",
+        "name": "tea",
+        "keywords": ["tea", "black tea", "green tea", "tannins"]
+      },
+      "severity": "moderate",
+      "mechanism": "Polyphenols (tannins) in tea bind non-heme iron, forming insoluble complexes in the gut.",
+      "clinical_effect": "Reduced iron absorption; slower correction of iron deficiency anemia.",
+      "recommendation": "Take iron with vitamin C (e.g., orange juice); avoid tea within 1-2 hours of dosing.",
+      "evidence_source": "Hurrell et al., Br J Nutr 1999",
+      "substitutions": [
+        {"replace": "tea with iron pill", "with": "orange juice with iron pill", "rationale": "Ascorbate enhances Fe2+ absorption"}
+      ]
+    },
+    {
+      "id": "int_023",
+      "drug": {
+        "name": "ferrous sulfate",
+        "rxnorm": "4493",
+        "drug_class": "iron supplement",
+        "aliases": ["feosol"]
+      },
+      "food_or_nutrient": {
+        "type": "food",
+        "name": "coffee",
+        "keywords": ["coffee", "espresso"]
+      },
+      "severity": "moderate",
+      "mechanism": "Coffee polyphenols (chlorogenic acid) inhibit non-heme iron absorption.",
+      "clinical_effect": "Suboptimal repletion in iron-deficiency anemia.",
+      "recommendation": "Avoid coffee within 1 hour before or after iron dose.",
+      "evidence_source": "Morck et al., Am J Clin Nutr 1983",
+      "substitutions": []
+    },
+    {
+      "id": "int_024",
+      "drug": {
+        "name": "ferrous sulfate",
+        "rxnorm": "4493",
+        "drug_class": "iron supplement",
+        "aliases": ["feosol"]
+      },
+      "food_or_nutrient": {
+        "type": "nutrient",
+        "name": "calcium",
+        "keywords": ["calcium", "milk", "yogurt", "cheese", "dairy"]
+      },
+      "severity": "moderate",
+      "mechanism": "Calcium competes with iron for the divalent metal transporter (DMT1) in the duodenum.",
+      "clinical_effect": "Reduced iron absorption when taken concurrently with dairy or calcium supplements.",
+      "recommendation": "Separate iron and calcium-containing foods or supplements by at least 2 hours.",
+      "evidence_source": "Hallberg et al., Am J Clin Nutr 1991",
+      "substitutions": []
+    },
+    {
+      "id": "int_025",
+      "drug": {
+        "name": "lithium",
+        "rxnorm": "6448",
+        "drug_class": "mood stabilizer",
+        "aliases": ["lithobid", "eskalith"]
+      },
+      "food_or_nutrient": {
+        "type": "nutrient",
+        "name": "sodium",
+        "keywords": ["sodium", "salt", "low-sodium diet", "sports drinks", "salty foods"]
+      },
+      "severity": "significant",
+      "mechanism": "Lithium and sodium share renal proximal tubule reabsorption. Low sodium intake or sodium loss increases lithium reabsorption; high sodium increases lithium excretion.",
+      "clinical_effect": "Sudden sodium drops can cause lithium toxicity (tremor, confusion, seizures); sudden sodium loads can drop lithium below therapeutic range.",
+      "recommendation": "Maintain consistent dietary sodium; avoid sudden low-sodium diets, fasting, or heavy sweating without fluid/electrolyte replacement.",
+      "evidence_source": "FDA Lithobid label; Finley, Clin Pharmacokinet 2016",
+      "substitutions": []
+    },
+    {
+      "id": "int_026",
+      "drug": {
+        "name": "sertraline",
+        "rxnorm": "36437",
+        "drug_class": "SSRI",
+        "aliases": ["zoloft"]
+      },
+      "food_or_nutrient": {
+        "type": "nutrient",
+        "name": "tryptophan",
+        "keywords": ["tryptophan", "5-htp", "l-tryptophan", "tryptophan supplement"]
+      },
+      "severity": "significant",
+      "mechanism": "Both SSRIs and tryptophan/5-HTP raise serotonergic tone; combined use can produce serotonin syndrome.",
+      "clinical_effect": "Agitation, hyperreflexia, clonus, hyperthermia, autonomic instability.",
+      "recommendation": "Avoid tryptophan or 5-HTP supplements while on SSRIs; counsel patients about herbal serotonergic agents (St. John's wort).",
+      "evidence_source": "Boyer & Shannon, NEJM 2005",
+      "substitutions": [
+        {"replace": "5-HTP supplement", "with": "discontinue and rely on prescribed SSRI", "rationale": "Eliminates serotonin syndrome risk"}
+      ]
+    },
+    {
+      "id": "int_027",
+      "drug": {
+        "name": "fluoxetine",
+        "rxnorm": "4493",
+        "drug_class": "SSRI",
+        "aliases": ["prozac"]
+      },
+      "food_or_nutrient": {
+        "type": "nutrient",
+        "name": "tryptophan",
+        "keywords": ["tryptophan", "5-htp", "l-tryptophan"]
+      },
+      "severity": "significant",
+      "mechanism": "Additive serotonergic activity raises risk of serotonin syndrome.",
+      "clinical_effect": "Serotonin syndrome.",
+      "recommendation": "Do not combine SSRIs with tryptophan or 5-HTP supplements.",
+      "evidence_source": "FDA Prozac label",
+      "substitutions": []
+    },
+    {
+      "id": "int_028",
+      "drug": {
+        "name": "simvastatin",
+        "rxnorm": "36567",
+        "drug_class": "statin",
+        "aliases": ["zocor"]
+      },
+      "food_or_nutrient": {
+        "type": "food",
+        "name": "red yeast rice",
+        "keywords": ["red yeast rice", "monacolin k"]
+      },
+      "severity": "significant",
+      "mechanism": "Red yeast rice contains monacolin K, which is biochemically identical to lovastatin; combined with a prescription statin it produces additive HMG-CoA reductase inhibition.",
+      "clinical_effect": "Doubled exposure raises risk of myopathy, rhabdomyolysis, and hepatotoxicity.",
+      "recommendation": "Do not use red yeast rice supplements while on any prescription statin.",
+      "evidence_source": "Cohen et al., JAMA Intern Med 2017",
+      "substitutions": [
+        {"replace": "red yeast rice supplement", "with": "discontinue supplement", "rationale": "Prescription statin already provides full therapeutic effect"}
+      ]
+    },
+    {
+      "id": "int_029",
+      "drug": {
+        "name": "atorvastatin",
+        "rxnorm": "83367",
+        "drug_class": "statin",
+        "aliases": ["lipitor"]
+      },
+      "food_or_nutrient": {
+        "type": "food",
+        "name": "red yeast rice",
+        "keywords": ["red yeast rice", "monacolin k"]
+      },
+      "severity": "significant",
+      "mechanism": "Monacolin K stacks with prescription statin activity, producing additive HMG-CoA reductase inhibition.",
+      "clinical_effect": "Increased risk of myopathy and rhabdomyolysis.",
+      "recommendation": "Avoid red yeast rice while on any prescription statin.",
+      "evidence_source": "Cohen et al., JAMA Intern Med 2017",
+      "substitutions": [
+        {"replace": "red yeast rice supplement", "with": "discontinue supplement", "rationale": "Statin already maximally inhibits the same enzyme"}
+      ]
+    },
+    {
+      "id": "int_030",
+      "drug": {
+        "name": "spironolactone",
+        "rxnorm": "9997",
+        "drug_class": "potassium-sparing diuretic",
+        "aliases": ["aldactone"]
+      },
+      "food_or_nutrient": {
+        "type": "nutrient",
+        "name": "potassium",
+        "keywords": ["potassium", "salt substitute", "banana", "orange juice", "coconut water", "tomato", "potato"]
+      },
+      "severity": "significant",
+      "mechanism": "Spironolactone blocks aldosterone-mediated potassium excretion; high dietary potassium or potassium salts can cause severe hyperkalemia.",
+      "clinical_effect": "Hyperkalemia and cardiac arrhythmia.",
+      "recommendation": "Avoid potassium-based salt substitutes; do not start potassium supplements without monitoring.",
+      "evidence_source": "FDA Aldactone label",
+      "substitutions": [
+        {"replace": "potassium chloride salt substitute", "with": "herb-and-citrus seasoning", "rationale": "No added potassium"}
+      ]
+    },
+    {
+      "id": "int_031",
+      "drug": {
+        "name": "diazepam",
+        "rxnorm": "3322",
+        "drug_class": "benzodiazepine",
+        "aliases": ["valium", "diastat"]
+      },
+      "food_or_nutrient": {
+        "type": "food",
+        "name": "grapefruit",
+        "keywords": ["grapefruit", "grapefruit juice", "pomelo", "seville orange"]
+      },
+      "severity": "significant",
+      "mechanism": "Grapefruit furanocoumarins inhibit intestinal CYP3A4, the principal enzyme metabolising diazepam. This increases oral bioavailability and prolongs sedative effects.",
+      "clinical_effect": "Excessive sedation, prolonged psychomotor impairment, increased risk of falls and respiratory depression. Clinically meaningful interaction documented at typical grapefruit serving sizes.",
+      "recommendation": "Avoid grapefruit and grapefruit juice while on diazepam. The interaction persists for 24-72 hours after grapefruit consumption due to irreversible CYP3A4 inhibition.",
+      "evidence_source": "Bailey et al., CMAJ 2013; Ozdemir et al., J Clin Pharmacol 1998",
+      "substitutions": [
+        {"replace": "grapefruit", "with": "navel orange or tangerine", "rationale": "No CYP3A4 inhibition"},
+        {"replace": "grapefruit juice", "with": "orange juice", "rationale": "Sweet oranges lack the relevant furanocoumarins"}
+      ]
+    },
+    {
+      "id": "int_032",
+      "drug": {
+        "name": "diazepam",
+        "rxnorm": "3322",
+        "drug_class": "benzodiazepine",
+        "aliases": ["valium", "diastat"]
+      },
+      "food_or_nutrient": {
+        "type": "food",
+        "name": "alcohol",
+        "keywords": ["alcohol", "beer", "wine", "liquor", "ethanol", "spirits"]
+      },
+      "severity": "contraindicated",
+      "mechanism": "Both diazepam and alcohol are CNS depressants acting on GABA-A receptors. Combined use produces synergistic central nervous system and respiratory depression. Alcohol additionally lowers seizure threshold, particularly relevant in patients with underlying epilepsy.",
+      "clinical_effect": "Profound sedation, respiratory depression, impaired psychomotor function, potential for fatal overdose. In epilepsy patients, paradoxical seizure risk during alcohol withdrawal.",
+      "recommendation": "Avoid all alcoholic beverages while on diazepam. This is especially critical in patients with seizure disorders where alcohol independently lowers seizure threshold.",
+      "evidence_source": "FDA Valium label; Tanaka, J Clin Pharm Ther 2003",
+      "substitutions": [
+        {"replace": "wine with dinner", "with": "sparkling water with citrus or non-alcoholic wine", "rationale": "Eliminates CNS depressant interaction"},
+        {"replace": "beer", "with": "non-alcoholic beer or kombucha", "rationale": "Maintains social drinking ritual without ethanol"}
+      ]
+    },
+    {
+      "id": "int_033",
+      "drug": {
+        "name": "fexofenadine",
+        "rxnorm": "4495",
+        "drug_class": "second-generation antihistamine",
+        "aliases": ["allegra"]
+      },
+      "food_or_nutrient": {
+        "type": "food",
+        "name": "fruit juices",
+        "keywords": ["orange juice", "apple juice", "grapefruit juice", "fruit juice"]
+      },
+      "severity": "moderate",
+      "mechanism": "Citrus and apple juices inhibit organic anion transporting polypeptides (OATP1A2 and OATP2B1) in the small intestine. These transporters mediate fexofenadine uptake, so juice co-administration can reduce fexofenadine bioavailability by up to 70%.",
+      "clinical_effect": "Reduced antihistamine efficacy with breakthrough allergy symptoms; the effect is most pronounced when juice is taken simultaneously with the dose.",
+      "recommendation": "Take fexofenadine with plain water. Avoid fruit juices for at least 4 hours before and 1-2 hours after dosing.",
+      "evidence_source": "Dresser et al., Clin Pharmacol Ther 2002; Bailey, Br J Clin Pharmacol 2010",
+      "substitutions": [
+        {"replace": "orange juice with morning medication", "with": "water with morning medication; juice 2+ hours later", "rationale": "Preserves OATP-mediated drug absorption"}
+      ]
+    },
+    {
+      "id": "int_034",
+      "drug": {
+        "name": "diazepam",
+        "rxnorm": "3322",
+        "drug_class": "benzodiazepine",
+        "aliases": ["valium"]
+      },
+      "food_or_nutrient": {
+        "type": "food",
+        "name": "caffeine",
+        "keywords": ["caffeine", "coffee", "espresso", "energy drinks", "cola"]
+      },
+      "severity": "advisory",
+      "mechanism": "Caffeine is a CNS stimulant that pharmacodynamically antagonises the sedative effects of benzodiazepines. The interaction does not alter diazepam pharmacokinetics but reduces perceived efficacy.",
+      "clinical_effect": "Reduced anxiolytic and sedative effect of diazepam; potentially counterproductive in anxiety or seizure prophylaxis contexts.",
+      "recommendation": "Moderate caffeine intake, especially around dosing times. Be aware that high caffeine intake may mask appropriate sedation needed for clinical effect.",
+      "evidence_source": "Mattila et al., Eur J Clin Pharmacol 1992",
+      "substitutions": [
+        {"replace": "high-caffeine coffee with anxiolytic dose", "with": "decaffeinated coffee or herbal tea", "rationale": "Avoids pharmacodynamic antagonism"}
+      ]
+    }
+  ]
+}

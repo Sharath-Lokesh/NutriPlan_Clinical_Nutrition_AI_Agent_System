@@ -1,0 +1,112 @@
+{
+  "exclusions": [
+    {
+      "condition": "coeliac disease",
+      "aliases": ["celiac disease", "celiac", "coeliac"],
+      "exclude_keywords": ["wheat", "barley", "rye", "spelt", "kamut", "triticale", "malt", "bulgur", "semolina", "farro", "couscous", "seitan"],
+      "exclude_categories": ["bread", "pasta", "beer", "regular oats (cross-contaminated)"],
+      "rationale": "Gluten triggers immune-mediated villous atrophy.",
+      "absolute": true,
+      "evidence_source": "ACG 2023"
+    },
+    {
+      "condition": "phenylketonuria",
+      "aliases": ["pku"],
+      "exclude_keywords": ["aspartame", "high-protein", "meat", "poultry", "fish", "eggs", "dairy", "nuts", "soy"],
+      "exclude_categories": ["protein-rich foods", "diet sodas with aspartame"],
+      "rationale": "Phenylalanine accumulation causes neurotoxicity; lifelong Phe-restricted diet with medical formula required.",
+      "absolute": true,
+      "evidence_source": "ACMG PKU Guidelines 2014"
+    },
+    {
+      "condition": "galactosaemia",
+      "aliases": ["galactosemia", "galt deficiency"],
+      "exclude_keywords": ["milk", "lactose", "whey", "casein", "butter", "cream", "yogurt", "cheese"],
+      "exclude_categories": ["dairy", "infant formula with lactose"],
+      "rationale": "GALT deficiency causes accumulation of galactose-1-phosphate; dairy must be eliminated lifelong.",
+      "absolute": true,
+      "evidence_source": "GMDI/SERN Galactosemia Guidelines 2017"
+    },
+    {
+      "condition": "shellfish allergy",
+      "aliases": ["crustacean allergy", "shrimp allergy"],
+      "exclude_keywords": ["shrimp", "prawn", "crab", "lobster", "crayfish", "langoustine", "clam", "mussel", "oyster", "scallop", "squid", "octopus"],
+      "exclude_categories": ["shellfish", "seafood paella", "fish sauce containing shellfish"],
+      "rationale": "IgE-mediated anaphylaxis risk.",
+      "absolute": true,
+      "evidence_source": "AAAAI 2020"
+    },
+    {
+      "condition": "peanut allergy",
+      "aliases": ["arachis allergy"],
+      "exclude_keywords": ["peanut", "groundnut", "arachis", "peanut butter", "peanut oil (unrefined)"],
+      "exclude_categories": ["peanut-containing snacks", "satay sauce", "many baked goods"],
+      "rationale": "IgE-mediated anaphylaxis risk.",
+      "absolute": true,
+      "evidence_source": "AAAAI 2020"
+    },
+    {
+      "condition": "tree nut allergy",
+      "aliases": ["nut allergy"],
+      "exclude_keywords": ["almond", "cashew", "walnut", "pecan", "pistachio", "hazelnut", "brazil nut", "macadamia"],
+      "exclude_categories": ["mixed nuts", "nut butters", "marzipan"],
+      "rationale": "IgE-mediated anaphylaxis risk.",
+      "absolute": true,
+      "evidence_source": "AAAAI 2020"
+    },
+    {
+      "condition": "warfarin therapy",
+      "aliases": ["coumadin therapy", "anticoagulation with warfarin"],
+      "exclude_keywords": ["grapefruit", "cranberry juice (high volume)", "st john's wort"],
+      "exclude_categories": [],
+      "rationale": "Avoid foods/supplements that markedly perturb INR; maintain consistent vitamin K intake rather than eliminate green vegetables.",
+      "absolute": false,
+      "evidence_source": "FDA warfarin label"
+    },
+    {
+      "condition": "pregnancy",
+      "aliases": ["pregnant", "gestation"],
+      "exclude_keywords": ["raw fish", "sushi", "shark", "swordfish", "king mackerel", "tilefish", "raw eggs", "unpasteurised milk", "unpasteurized milk", "raw milk cheese", "deli meat (unheated)", "pate", "alcohol", "high-dose vitamin a", "liver"],
+      "exclude_categories": ["raw seafood", "high-mercury fish", "unpasteurised dairy", "alcohol"],
+      "rationale": "Risk of listeriosis, toxoplasmosis, methylmercury toxicity, and teratogenicity.",
+      "absolute": true,
+      "evidence_source": "ACOG 2023; FDA/EPA fish advisory 2021"
+    },
+    {
+      "condition": "maoi therapy",
+      "aliases": ["monoamine oxidase inhibitor", "phenelzine therapy", "tranylcypromine therapy"],
+      "exclude_keywords": ["aged cheese", "cured meat", "fermented soy", "tap beer", "marmite", "vegemite", "broad beans", "fava beans", "sauerkraut"],
+      "exclude_categories": ["high-tyramine foods"],
+      "rationale": "Tyramine triggers hypertensive crisis when MAO is inhibited.",
+      "absolute": true,
+      "evidence_source": "FDA MAOI label"
+    },
+    {
+      "condition": "g6pd deficiency",
+      "aliases": ["glucose-6-phosphate dehydrogenase deficiency", "favism"],
+      "exclude_keywords": ["fava beans", "broad beans", "ful medames"],
+      "exclude_categories": ["fava bean dishes"],
+      "rationale": "Vicine and convicine in fava beans precipitate haemolytic crisis.",
+      "absolute": true,
+      "evidence_source": "WHO G6PD Working Group 1989"
+    },
+    {
+      "condition": "hereditary fructose intolerance",
+      "aliases": ["hfi", "aldolase b deficiency"],
+      "exclude_keywords": ["fructose", "sucrose", "honey", "high fructose corn syrup", "agave", "fruit (most)"],
+      "exclude_categories": ["sweetened foods", "most fruits"],
+      "rationale": "Aldolase B deficiency causes hypoglycaemia and hepatic injury on fructose exposure.",
+      "absolute": true,
+      "evidence_source": "Inborn Errors of Metabolism guidance"
+    },
+    {
+      "condition": "ckd stage 4-5",
+      "aliases": ["ckd_stage_4-5", "advanced ckd"],
+      "exclude_keywords": ["star fruit", "starfruit", "carambola"],
+      "exclude_categories": ["high-potassium juices in excess"],
+      "rationale": "Star fruit contains caramboxin which causes neurotoxicity in renal failure.",
+      "absolute": true,
+      "evidence_source": "Garcia-Cairasco et al. 2013"
+    }
+  ]
+}

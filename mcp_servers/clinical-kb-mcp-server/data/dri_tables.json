@@ -1,0 +1,314 @@
+{
+  "nutrients": [
+    {
+      "nutrient": "energy",
+      "unit": "kcal/day",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 30, "ai": 2400},
+        {"sex": "male",   "age_min": 31, "age_max": 50, "ai": 2200},
+        {"sex": "male",   "age_min": 51, "age_max": 120, "ai": 2000},
+        {"sex": "female", "age_min": 19, "age_max": 30, "ai": 1900},
+        {"sex": "female", "age_min": 31, "age_max": 50, "ai": 1800},
+        {"sex": "female", "age_min": 51, "age_max": 120, "ai": 1600},
+        {"sex": "female", "age_min": 19, "age_max": 50, "pregnant": true, "ai": 2240},
+        {"sex": "female", "age_min": 19, "age_max": 50, "lactating": true, "ai": 2400}
+      ],
+      "source": "IOM DRI Estimated Energy Requirements (sedentary reference)"
+    },
+    {
+      "nutrient": "protein",
+      "unit": "g/day",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 120, "rda": 56, "ear": 46},
+        {"sex": "female", "age_min": 19, "age_max": 120, "rda": 46, "ear": 38},
+        {"sex": "female", "age_min": 14, "age_max": 50, "pregnant": true,  "rda": 71, "ear": 56},
+        {"sex": "female", "age_min": 14, "age_max": 50, "lactating": true, "rda": 71, "ear": 56}
+      ],
+      "source": "IOM DRI 2005"
+    },
+    {
+      "nutrient": "carbohydrate",
+      "unit": "g/day",
+      "groups": [
+        {"sex": "male",   "age_min": 1,  "age_max": 120, "rda": 130, "ear": 100},
+        {"sex": "female", "age_min": 1,  "age_max": 120, "rda": 130, "ear": 100},
+        {"sex": "female", "age_min": 14, "age_max": 50, "pregnant": true,  "rda": 175, "ear": 135},
+        {"sex": "female", "age_min": 14, "age_max": 50, "lactating": true, "rda": 210, "ear": 160}
+      ],
+      "source": "IOM DRI 2005"
+    },
+    {
+      "nutrient": "fibre",
+      "unit": "g/day",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 50, "ai": 38},
+        {"sex": "male",   "age_min": 51, "age_max": 120, "ai": 30},
+        {"sex": "female", "age_min": 19, "age_max": 50, "ai": 25},
+        {"sex": "female", "age_min": 51, "age_max": 120, "ai": 21},
+        {"sex": "female", "age_min": 14, "age_max": 50, "pregnant": true,  "ai": 28},
+        {"sex": "female", "age_min": 14, "age_max": 50, "lactating": true, "ai": 29}
+      ],
+      "source": "IOM DRI 2005"
+    },
+    {
+      "nutrient": "total fat",
+      "unit": "g/day",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 120, "amdr_pct_kcal_min": 20, "amdr_pct_kcal_max": 35},
+        {"sex": "female", "age_min": 19, "age_max": 120, "amdr_pct_kcal_min": 20, "amdr_pct_kcal_max": 35}
+      ],
+      "source": "IOM DRI 2005 (AMDR)"
+    },
+    {
+      "nutrient": "saturated fat",
+      "unit": "% kcal",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 120, "ul": 10},
+        {"sex": "female", "age_min": 19, "age_max": 120, "ul": 10}
+      ],
+      "source": "Dietary Guidelines for Americans 2020-2025"
+    },
+    {
+      "nutrient": "n-3 fatty acids",
+      "unit": "g/day",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 120, "ai": 1.6},
+        {"sex": "female", "age_min": 19, "age_max": 120, "ai": 1.1},
+        {"sex": "female", "age_min": 14, "age_max": 50, "pregnant": true,  "ai": 1.4},
+        {"sex": "female", "age_min": 14, "age_max": 50, "lactating": true, "ai": 1.3}
+      ],
+      "source": "IOM DRI 2005 (alpha-linolenic acid)"
+    },
+    {
+      "nutrient": "vitamin a",
+      "unit": "mcg RAE/day",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 120, "rda": 900, "ear": 625, "ul": 3000},
+        {"sex": "female", "age_min": 19, "age_max": 120, "rda": 700, "ear": 500, "ul": 3000},
+        {"sex": "female", "age_min": 19, "age_max": 50, "pregnant": true,  "rda": 770, "ear": 550, "ul": 3000},
+        {"sex": "female", "age_min": 19, "age_max": 50, "lactating": true, "rda": 1300, "ear": 900, "ul": 3000}
+      ],
+      "source": "IOM DRI 2001"
+    },
+    {
+      "nutrient": "vitamin c",
+      "unit": "mg/day",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 120, "rda": 90, "ear": 75, "ul": 2000},
+        {"sex": "female", "age_min": 19, "age_max": 120, "rda": 75, "ear": 60, "ul": 2000},
+        {"sex": "female", "age_min": 19, "age_max": 50, "pregnant": true,  "rda": 85, "ear": 70, "ul": 2000},
+        {"sex": "female", "age_min": 19, "age_max": 50, "lactating": true, "rda": 120, "ear": 100, "ul": 2000}
+      ],
+      "source": "IOM DRI 2000"
+    },
+    {
+      "nutrient": "vitamin d",
+      "unit": "mcg/day",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 70,  "rda": 15, "ear": 10, "ul": 100},
+        {"sex": "male",   "age_min": 71, "age_max": 120, "rda": 20, "ear": 10, "ul": 100},
+        {"sex": "female", "age_min": 19, "age_max": 70,  "rda": 15, "ear": 10, "ul": 100},
+        {"sex": "female", "age_min": 71, "age_max": 120, "rda": 20, "ear": 10, "ul": 100},
+        {"sex": "female", "age_min": 14, "age_max": 50, "pregnant": true,  "rda": 15, "ear": 10, "ul": 100},
+        {"sex": "female", "age_min": 14, "age_max": 50, "lactating": true, "rda": 15, "ear": 10, "ul": 100}
+      ],
+      "source": "IOM DRI 2011"
+    },
+    {
+      "nutrient": "vitamin e",
+      "unit": "mg/day",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 120, "rda": 15, "ear": 12, "ul": 1000},
+        {"sex": "female", "age_min": 19, "age_max": 120, "rda": 15, "ear": 12, "ul": 1000},
+        {"sex": "female", "age_min": 14, "age_max": 50, "pregnant": true,  "rda": 15, "ear": 12, "ul": 1000},
+        {"sex": "female", "age_min": 14, "age_max": 50, "lactating": true, "rda": 19, "ear": 16, "ul": 1000}
+      ],
+      "source": "IOM DRI 2000"
+    },
+    {
+      "nutrient": "vitamin k",
+      "unit": "mcg/day",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 120, "ai": 120},
+        {"sex": "female", "age_min": 19, "age_max": 120, "ai": 90},
+        {"sex": "female", "age_min": 19, "age_max": 50, "pregnant": true,  "ai": 90},
+        {"sex": "female", "age_min": 19, "age_max": 50, "lactating": true, "ai": 90}
+      ],
+      "source": "IOM DRI 2001"
+    },
+    {
+      "nutrient": "vitamin b1",
+      "unit": "mg/day",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 120, "rda": 1.2, "ear": 1.0},
+        {"sex": "female", "age_min": 19, "age_max": 120, "rda": 1.1, "ear": 0.9},
+        {"sex": "female", "age_min": 14, "age_max": 50, "pregnant": true,  "rda": 1.4, "ear": 1.2},
+        {"sex": "female", "age_min": 14, "age_max": 50, "lactating": true, "rda": 1.4, "ear": 1.2}
+      ],
+      "source": "IOM DRI 1998 (thiamin)"
+    },
+    {
+      "nutrient": "vitamin b2",
+      "unit": "mg/day",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 120, "rda": 1.3, "ear": 1.1},
+        {"sex": "female", "age_min": 19, "age_max": 120, "rda": 1.1, "ear": 0.9},
+        {"sex": "female", "age_min": 14, "age_max": 50, "pregnant": true,  "rda": 1.4, "ear": 1.2},
+        {"sex": "female", "age_min": 14, "age_max": 50, "lactating": true, "rda": 1.6, "ear": 1.3}
+      ],
+      "source": "IOM DRI 1998 (riboflavin)"
+    },
+    {
+      "nutrient": "vitamin b3",
+      "unit": "mg NE/day",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 120, "rda": 16, "ear": 12, "ul": 35},
+        {"sex": "female", "age_min": 19, "age_max": 120, "rda": 14, "ear": 11, "ul": 35},
+        {"sex": "female", "age_min": 14, "age_max": 50, "pregnant": true,  "rda": 18, "ear": 14, "ul": 35},
+        {"sex": "female", "age_min": 14, "age_max": 50, "lactating": true, "rda": 17, "ear": 13, "ul": 35}
+      ],
+      "source": "IOM DRI 1998 (niacin)"
+    },
+    {
+      "nutrient": "vitamin b6",
+      "unit": "mg/day",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 50,  "rda": 1.3, "ear": 1.1, "ul": 100},
+        {"sex": "male",   "age_min": 51, "age_max": 120, "rda": 1.7, "ear": 1.4, "ul": 100},
+        {"sex": "female", "age_min": 19, "age_max": 50,  "rda": 1.3, "ear": 1.1, "ul": 100},
+        {"sex": "female", "age_min": 51, "age_max": 120, "rda": 1.5, "ear": 1.3, "ul": 100},
+        {"sex": "female", "age_min": 14, "age_max": 50, "pregnant": true,  "rda": 1.9, "ear": 1.6, "ul": 100},
+        {"sex": "female", "age_min": 14, "age_max": 50, "lactating": true, "rda": 2.0, "ear": 1.7, "ul": 100}
+      ],
+      "source": "IOM DRI 1998"
+    },
+    {
+      "nutrient": "vitamin b9",
+      "unit": "mcg DFE/day",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 120, "rda": 400, "ear": 320, "ul": 1000},
+        {"sex": "female", "age_min": 19, "age_max": 120, "rda": 400, "ear": 320, "ul": 1000},
+        {"sex": "female", "age_min": 14, "age_max": 50, "pregnant": true,  "rda": 600, "ear": 520, "ul": 1000},
+        {"sex": "female", "age_min": 14, "age_max": 50, "lactating": true, "rda": 500, "ear": 450, "ul": 1000}
+      ],
+      "source": "IOM DRI 1998 (folate)"
+    },
+    {
+      "nutrient": "vitamin b12",
+      "unit": "mcg/day",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 120, "rda": 2.4, "ear": 2.0},
+        {"sex": "female", "age_min": 19, "age_max": 120, "rda": 2.4, "ear": 2.0},
+        {"sex": "female", "age_min": 14, "age_max": 50, "pregnant": true,  "rda": 2.6, "ear": 2.2},
+        {"sex": "female", "age_min": 14, "age_max": 50, "lactating": true, "rda": 2.8, "ear": 2.4}
+      ],
+      "source": "IOM DRI 1998 (cobalamin)"
+    },
+    {
+      "nutrient": "sodium",
+      "unit": "mg/day",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 120, "ai": 1500, "crl": 2300},
+        {"sex": "female", "age_min": 19, "age_max": 120, "ai": 1500, "crl": 2300},
+        {"sex": "female", "age_min": 14, "age_max": 50, "pregnant": true,  "ai": 1500, "crl": 2300},
+        {"sex": "female", "age_min": 14, "age_max": 50, "lactating": true, "ai": 1500, "crl": 2300}
+      ],
+      "source": "NASEM DRI 2019 (CRL = chronic disease risk reduction level)"
+    },
+    {
+      "nutrient": "potassium",
+      "unit": "mg/day",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 120, "ai": 3400},
+        {"sex": "female", "age_min": 19, "age_max": 120, "ai": 2600},
+        {"sex": "female", "age_min": 14, "age_max": 50, "pregnant": true,  "ai": 2900},
+        {"sex": "female", "age_min": 14, "age_max": 50, "lactating": true, "ai": 2800}
+      ],
+      "source": "NASEM DRI 2019"
+    },
+    {
+      "nutrient": "calcium",
+      "unit": "mg/day",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 70,  "rda": 1000, "ear": 800, "ul": 2500},
+        {"sex": "male",   "age_min": 71, "age_max": 120, "rda": 1200, "ear": 1000, "ul": 2000},
+        {"sex": "female", "age_min": 19, "age_max": 50,  "rda": 1000, "ear": 800, "ul": 2500},
+        {"sex": "female", "age_min": 51, "age_max": 120, "rda": 1200, "ear": 1000, "ul": 2000},
+        {"sex": "female", "age_min": 14, "age_max": 50, "pregnant": true,  "rda": 1000, "ear": 800, "ul": 2500},
+        {"sex": "female", "age_min": 14, "age_max": 50, "lactating": true, "rda": 1000, "ear": 800, "ul": 2500}
+      ],
+      "source": "IOM DRI 2011"
+    },
+    {
+      "nutrient": "magnesium",
+      "unit": "mg/day",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 30, "rda": 400, "ear": 330, "ul": 350},
+        {"sex": "male",   "age_min": 31, "age_max": 120, "rda": 420, "ear": 350, "ul": 350},
+        {"sex": "female", "age_min": 19, "age_max": 30, "rda": 310, "ear": 255, "ul": 350},
+        {"sex": "female", "age_min": 31, "age_max": 120, "rda": 320, "ear": 265, "ul": 350},
+        {"sex": "female", "age_min": 19, "age_max": 50, "pregnant": true,  "rda": 360, "ear": 300, "ul": 350},
+        {"sex": "female", "age_min": 19, "age_max": 50, "lactating": true, "rda": 320, "ear": 265, "ul": 350}
+      ],
+      "source": "IOM DRI 1997 (UL applies to supplemental Mg only)"
+    },
+    {
+      "nutrient": "iron",
+      "unit": "mg/day",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 120, "rda": 8,  "ear": 6,  "ul": 45},
+        {"sex": "female", "age_min": 19, "age_max": 50,  "rda": 18, "ear": 8.1, "ul": 45},
+        {"sex": "female", "age_min": 51, "age_max": 120, "rda": 8,  "ear": 5,  "ul": 45},
+        {"sex": "female", "age_min": 14, "age_max": 50, "pregnant": true,  "rda": 27, "ear": 22, "ul": 45},
+        {"sex": "female", "age_min": 14, "age_max": 50, "lactating": true, "rda": 9,  "ear": 6.5, "ul": 45}
+      ],
+      "source": "IOM DRI 2001"
+    },
+    {
+      "nutrient": "zinc",
+      "unit": "mg/day",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 120, "rda": 11, "ear": 9.4, "ul": 40},
+        {"sex": "female", "age_min": 19, "age_max": 120, "rda": 8,  "ear": 6.8, "ul": 40},
+        {"sex": "female", "age_min": 14, "age_max": 50, "pregnant": true,  "rda": 11, "ear": 9.5, "ul": 40},
+        {"sex": "female", "age_min": 14, "age_max": 50, "lactating": true, "rda": 12, "ear": 10.4, "ul": 40}
+      ],
+      "source": "IOM DRI 2001"
+    },
+    {
+      "nutrient": "iodine",
+      "unit": "mcg/day",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 120, "rda": 150, "ear": 95,  "ul": 1100},
+        {"sex": "female", "age_min": 19, "age_max": 120, "rda": 150, "ear": 95,  "ul": 1100},
+        {"sex": "female", "age_min": 14, "age_max": 50, "pregnant": true,  "rda": 220, "ear": 160, "ul": 1100},
+        {"sex": "female", "age_min": 14, "age_max": 50, "lactating": true, "rda": 290, "ear": 209, "ul": 1100}
+      ],
+      "source": "IOM DRI 2001"
+    },
+    {
+      "nutrient": "selenium",
+      "unit": "mcg/day",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 120, "rda": 55, "ear": 45, "ul": 400},
+        {"sex": "female", "age_min": 19, "age_max": 120, "rda": 55, "ear": 45, "ul": 400},
+        {"sex": "female", "age_min": 14, "age_max": 50, "pregnant": true,  "rda": 60, "ear": 49, "ul": 400},
+        {"sex": "female", "age_min": 14, "age_max": 50, "lactating": true, "rda": 70, "ear": 59, "ul": 400}
+      ],
+      "source": "IOM DRI 2000"
+    },
+    {
+      "nutrient": "phosphorus",
+      "unit": "mg/day",
+      "groups": [
+        {"sex": "male",   "age_min": 19, "age_max": 70,  "rda": 700, "ear": 580, "ul": 4000},
+        {"sex": "male",   "age_min": 71, "age_max": 120, "rda": 700, "ear": 580, "ul": 3000},
+        {"sex": "female", "age_min": 19, "age_max": 70,  "rda": 700, "ear": 580, "ul": 4000},
+        {"sex": "female", "age_min": 71, "age_max": 120, "rda": 700, "ear": 580, "ul": 3000},
+        {"sex": "female", "age_min": 14, "age_max": 50, "pregnant": true,  "rda": 700, "ear": 580, "ul": 3500},
+        {"sex": "female", "age_min": 14, "age_max": 50, "lactating": true, "rda": 700, "ear": 580, "ul": 4000}
+      ],
+      "source": "IOM DRI 1997"
+    }
+  ]
+}

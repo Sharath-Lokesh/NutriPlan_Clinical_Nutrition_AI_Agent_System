@@ -1,0 +1,131 @@
+{
+  "priorities": [
+    {
+      "condition": "ckd stage 3-5",
+      "aliases": ["ckd_stage_3-5", "ckd_stage_4-5", "ckd_stage_4", "ckd_stage_5", "chronic kidney disease"],
+      "emphasise": [
+        {"nutrient": "vitamin d", "rationale": "secondary hyperparathyroidism and bone disease"},
+        {"nutrient": "iron", "rationale": "anaemia of CKD (after EPO consideration)"}
+      ],
+      "limit": [
+        {"nutrient": "potassium",  "max_mg_per_day": 2000, "rationale": "hyperkalaemia risk"},
+        {"nutrient": "phosphorus", "max_mg_per_day": 800,  "rationale": "vascular calcification and CKD-MBD"},
+        {"nutrient": "sodium",     "max_mg_per_day": 2000, "rationale": "fluid overload, blood pressure control"}
+      ],
+      "source": "KDOQI 2020"
+    },
+    {
+      "condition": "type 2 diabetes",
+      "aliases": ["t2dm", "diabetes mellitus type 2"],
+      "emphasise": [
+        {"nutrient": "magnesium", "rationale": "deficiency associated with insulin resistance"},
+        {"nutrient": "vitamin d", "rationale": "frequent deficiency in T2DM"},
+        {"nutrient": "fibre", "rationale": "improves post-prandial glycaemia"}
+      ],
+      "limit": [
+        {"nutrient": "sodium", "max_mg_per_day": 2300, "rationale": "co-existent hypertension is common"}
+      ],
+      "source": "ADA 2024"
+    },
+    {
+      "condition": "hypertension",
+      "aliases": ["high blood pressure", "htn"],
+      "emphasise": [
+        {"nutrient": "potassium", "rationale": "blood pressure reduction (3500-5000 mg/d if renal function permits)"},
+        {"nutrient": "magnesium", "rationale": "vascular tone and BP modulation"},
+        {"nutrient": "calcium", "rationale": "DASH pattern includes low-fat dairy"}
+      ],
+      "limit": [
+        {"nutrient": "sodium", "max_mg_per_day": 1500, "rationale": "DASH-Sodium ideal target"}
+      ],
+      "source": "AHA/ACC 2017; DASH-Sodium"
+    },
+    {
+      "condition": "heart failure",
+      "aliases": ["chf", "congestive heart failure"],
+      "emphasise": [
+        {"nutrient": "thiamine", "rationale": "loop diuretic-induced thiamine wasting"}
+      ],
+      "limit": [
+        {"nutrient": "sodium", "max_mg_per_day": 2000, "rationale": "fluid retention"}
+      ],
+      "source": "AHA/ACC/HFSA 2022"
+    },
+    {
+      "condition": "coeliac disease",
+      "aliases": ["celiac disease", "celiac"],
+      "emphasise": [
+        {"nutrient": "iron", "rationale": "malabsorption and chronic blood loss"},
+        {"nutrient": "vitamin b9", "rationale": "duodenal villous atrophy reduces folate absorption"},
+        {"nutrient": "vitamin b12", "rationale": "ileal involvement possible"},
+        {"nutrient": "calcium", "rationale": "osteoporosis risk"},
+        {"nutrient": "vitamin d", "rationale": "osteoporosis and malabsorption"},
+        {"nutrient": "fibre", "rationale": "GF diets are commonly low in fibre"}
+      ],
+      "limit": [],
+      "source": "ACG 2023"
+    },
+    {
+      "condition": "pregnancy",
+      "aliases": ["pregnant", "gestation", "prenatal"],
+      "emphasise": [
+        {"nutrient": "vitamin b9", "rationale": "neural tube defect prevention (600 mcg DFE/day)"},
+        {"nutrient": "iron", "rationale": "increased plasma volume and fetal demands (27 mg/day)"},
+        {"nutrient": "iodine", "rationale": "fetal neurodevelopment (220 mcg/day)"},
+        {"nutrient": "calcium", "rationale": "fetal skeletal mineralisation"},
+        {"nutrient": "choline", "rationale": "fetal brain and spinal cord development"},
+        {"nutrient": "n-3 fatty acids", "rationale": "DHA for fetal neural and visual development"}
+      ],
+      "limit": [
+        {"nutrient": "vitamin a", "max_mcg_per_day": 3000, "rationale": "preformed retinol teratogenicity"},
+        {"nutrient": "caffeine", "max_mg_per_day": 200, "rationale": "miscarriage and growth restriction risk"}
+      ],
+      "source": "ACOG/IOM 2023"
+    },
+    {
+      "condition": "obesity",
+      "aliases": ["overweight", "bmi >= 30"],
+      "emphasise": [
+        {"nutrient": "vitamin d", "rationale": "sequestration in adipose tissue increases deficiency risk"},
+        {"nutrient": "fibre", "rationale": "satiety and glycaemic control"}
+      ],
+      "limit": [],
+      "source": "AACE/Obesity Society 2016"
+    },
+    {
+      "condition": "nafld",
+      "aliases": ["non-alcoholic fatty liver disease", "nash", "masld"],
+      "emphasise": [
+        {"nutrient": "vitamin e", "rationale": "biopsy-proven NASH in non-diabetic adults (800 IU/day)"}
+      ],
+      "limit": [
+        {"nutrient": "added sugars", "max_pct_kcal": 10, "rationale": "fructose drives de novo lipogenesis"}
+      ],
+      "source": "AASLD 2023"
+    },
+    {
+      "condition": "dyslipidaemia",
+      "aliases": ["dyslipidemia", "high cholesterol", "hyperlipidemia"],
+      "emphasise": [
+        {"nutrient": "soluble fibre", "rationale": "5-10 g/day reduces LDL-C"},
+        {"nutrient": "n-3 fatty acids", "rationale": "triglyceride reduction"}
+      ],
+      "limit": [
+        {"nutrient": "saturated fat", "max_pct_kcal": 6, "rationale": "primary driver of LDL-C"}
+      ],
+      "source": "AHA/ACC 2018"
+    },
+    {
+      "condition": "gout",
+      "aliases": ["hyperuricemia", "hyperuricaemia"],
+      "emphasise": [
+        {"nutrient": "vitamin c", "rationale": "modest urate-lowering effect (500 mg/day)"}
+      ],
+      "limit": [
+        {"nutrient": "purines", "rationale": "limit organ meats, shellfish, anchovies"},
+        {"nutrient": "fructose", "rationale": "raises serum urate"}
+      ],
+      "source": "ACR 2020"
+    }
+  ]
+}

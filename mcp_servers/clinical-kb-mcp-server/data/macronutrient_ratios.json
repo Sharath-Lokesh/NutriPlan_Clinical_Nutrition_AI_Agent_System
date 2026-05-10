@@ -1,0 +1,166 @@
+{
+  "ratios": [
+    {
+      "key": "type 2 diabetes",
+      "carb_pct": [40, 50],
+      "protein_pct": [15, 25],
+      "fat_pct": [30, 35],
+      "saturated_fat_pct_max": 10,
+      "fibre_g_per_1000_kcal_min": 14,
+      "rationale": "Lower carbohydrate proportion improves glycaemic control; higher protein supports satiety and lean mass.",
+      "source": "ADA 2024"
+    },
+    {
+      "key": "type 1 diabetes",
+      "carb_pct": [45, 55],
+      "protein_pct": [15, 20],
+      "fat_pct": [25, 35],
+      "saturated_fat_pct_max": 10,
+      "fibre_g_per_1000_kcal_min": 14,
+      "rationale": "Carbohydrate counting matched to insulin; balanced AMDR with quality fats.",
+      "source": "ADA 2024"
+    },
+    {
+      "key": "ckd_stage_3-4_non-dialysis",
+      "carb_pct": [50, 60],
+      "protein_pct": [8, 10],
+      "fat_pct": [25, 35],
+      "saturated_fat_pct_max": 10,
+      "rationale": "Protein restriction (0.55-0.60 g/kg/day) slows GFR decline.",
+      "source": "KDOQI 2020"
+    },
+    {
+      "key": "ckd_stage_5_dialysis",
+      "carb_pct": [45, 55],
+      "protein_pct": [15, 20],
+      "fat_pct": [25, 35],
+      "saturated_fat_pct_max": 10,
+      "rationale": "Higher protein (1.0-1.2 g/kg/day) compensates for dialysis losses.",
+      "source": "KDOQI 2020"
+    },
+    {
+      "key": "hypertension",
+      "carb_pct": [50, 55],
+      "protein_pct": [15, 20],
+      "fat_pct": [25, 30],
+      "saturated_fat_pct_max": 6,
+      "fibre_g_per_1000_kcal_min": 14,
+      "rationale": "DASH macronutrient pattern emphasises plant carbohydrates and unsaturated fats.",
+      "source": "AHA/ACC 2017; DASH-Sodium"
+    },
+    {
+      "key": "heart failure",
+      "carb_pct": [45, 55],
+      "protein_pct": [15, 20],
+      "fat_pct": [25, 35],
+      "saturated_fat_pct_max": 7,
+      "rationale": "Mediterranean-style pattern; adequate protein to prevent cachexia.",
+      "source": "AHA/ACC/HFSA 2022"
+    },
+    {
+      "key": "dyslipidaemia",
+      "carb_pct": [45, 55],
+      "protein_pct": [15, 20],
+      "fat_pct": [25, 35],
+      "saturated_fat_pct_max": 6,
+      "fibre_g_per_1000_kcal_min": 14,
+      "rationale": "Lower saturated fat and higher soluble fibre reduce LDL-C.",
+      "source": "AHA/ACC 2018"
+    },
+    {
+      "key": "obesity",
+      "carb_pct": [40, 50],
+      "protein_pct": [25, 30],
+      "fat_pct": [25, 35],
+      "saturated_fat_pct_max": 10,
+      "fibre_g_per_1000_kcal_min": 14,
+      "rationale": "Higher protein preserves lean mass during energy deficit; high fibre improves satiety.",
+      "source": "AACE/Obesity Society 2016"
+    },
+    {
+      "key": "nafld",
+      "carb_pct": [40, 50],
+      "protein_pct": [15, 25],
+      "fat_pct": [30, 40],
+      "saturated_fat_pct_max": 10,
+      "rationale": "Mediterranean macronutrient pattern with restricted added sugars/fructose.",
+      "source": "AASLD 2023"
+    },
+    {
+      "key": "ibs",
+      "carb_pct": [45, 55],
+      "protein_pct": [15, 20],
+      "fat_pct": [25, 35],
+      "rationale": "Standard AMDR; emphasis on FODMAP composition rather than macros.",
+      "source": "Monash 2023"
+    },
+    {
+      "key": "coeliac disease",
+      "carb_pct": [45, 55],
+      "protein_pct": [15, 20],
+      "fat_pct": [25, 35],
+      "fibre_g_per_1000_kcal_min": 14,
+      "rationale": "Standard AMDR using gluten-free whole grains (oats GF, rice, quinoa, buckwheat).",
+      "source": "ACG 2023"
+    },
+    {
+      "key": "gout",
+      "carb_pct": [50, 55],
+      "protein_pct": [15, 20],
+      "fat_pct": [25, 30],
+      "rationale": "Mediterranean/DASH pattern with plant proteins; limit purine-rich animal proteins.",
+      "source": "ACR 2020"
+    },
+    {
+      "key": "pregnancy",
+      "carb_pct": [45, 55],
+      "protein_pct": [15, 25],
+      "fat_pct": [25, 35],
+      "rationale": "Standard AMDR with extra protein (>=71 g/d) and DHA.",
+      "source": "ACOG/IOM 2023"
+    },
+    {
+      "key": "weight_loss",
+      "carb_pct": [40, 45],
+      "protein_pct": [25, 30],
+      "fat_pct": [25, 35],
+      "fibre_g_per_1000_kcal_min": 14,
+      "rationale": "Higher protein preserves lean mass; moderate carb facilitates energy deficit adherence.",
+      "source": "AACE/Obesity Society 2016; ISSN Position Stand 2017"
+    },
+    {
+      "key": "muscle_gain",
+      "carb_pct": [45, 55],
+      "protein_pct": [25, 30],
+      "fat_pct": [20, 30],
+      "rationale": "Protein 1.6-2.2 g/kg/day with adequate carbohydrate to fuel resistance training.",
+      "source": "ISSN Position Stand on Protein 2017"
+    },
+    {
+      "key": "endurance",
+      "carb_pct": [55, 65],
+      "protein_pct": [12, 18],
+      "fat_pct": [20, 30],
+      "rationale": "High carbohydrate fuels glycogen demands of endurance training.",
+      "source": "ACSM/AND/DC Joint Position 2016"
+    },
+    {
+      "key": "maintenance",
+      "carb_pct": [45, 55],
+      "protein_pct": [15, 20],
+      "fat_pct": [25, 35],
+      "rationale": "Standard AMDR for healthy adults at energy balance.",
+      "source": "IOM AMDR 2005"
+    },
+    {
+      "key": "general_healthy",
+      "carb_pct": [45, 55],
+      "protein_pct": [15, 20],
+      "fat_pct": [25, 35],
+      "saturated_fat_pct_max": 10,
+      "fibre_g_per_1000_kcal_min": 14,
+      "rationale": "Dietary Guidelines for Americans healthy pattern.",
+      "source": "DGA 2020-2025"
+    }
+  ]
+}

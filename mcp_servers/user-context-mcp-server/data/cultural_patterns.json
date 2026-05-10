@@ -1,0 +1,112 @@
+{
+  "patterns": [
+    {
+      "key": "south_asian",
+      "aliases": ["indian", "pakistani", "bangladeshi", "sri lankan", "nepali", "desi"],
+      "staples": ["rice", "lentils (dal)", "wheat flatbread (roti/chapati)", "yogurt", "ghee"],
+      "common_proteins": ["chicken", "lamb", "paneer", "lentils", "chickpeas"],
+      "common_spices": ["turmeric", "cumin", "coriander", "cardamom", "garam masala"],
+      "typical_cooking_methods": ["curry", "tandoor", "stir-fry", "slow-simmer"],
+      "fasting_traditions": ["Ramadan (Muslim)", "Ekadashi (Hindu)", "Navratri (Hindu)"]
+    },
+    {
+      "key": "east_asian",
+      "aliases": ["chinese", "japanese", "korean", "taiwanese"],
+      "staples": ["rice", "noodles", "tofu", "soy sauce", "cabbage"],
+      "common_proteins": ["pork", "chicken", "fish", "tofu", "egg"],
+      "common_spices": ["ginger", "garlic", "scallion", "sesame", "white pepper"],
+      "typical_cooking_methods": ["stir-fry", "steam", "braise", "simmer", "grill"],
+      "fasting_traditions": ["Buddhist vegetarian days", "Lunar New Year observances"]
+    },
+    {
+      "key": "southeast_asian",
+      "aliases": ["thai", "vietnamese", "filipino", "indonesian", "malaysian", "cambodian", "laotian"],
+      "staples": ["rice", "rice noodles", "fish sauce", "coconut milk", "fresh herbs"],
+      "common_proteins": ["fish", "shrimp", "chicken", "pork", "tofu"],
+      "common_spices": ["lemongrass", "galangal", "kaffir lime", "chili", "thai basil"],
+      "typical_cooking_methods": ["stir-fry", "curry", "grill", "steam", "raw salad"],
+      "fasting_traditions": ["Buddhist vegetarian days", "Ramadan (Muslim communities)"]
+    },
+    {
+      "key": "mediterranean",
+      "aliases": ["greek", "italian", "spanish", "southern french", "cypriot"],
+      "staples": ["olive oil", "bread", "pasta", "legumes", "fresh vegetables"],
+      "common_proteins": ["fish", "chicken", "lamb", "legumes", "cheese"],
+      "common_spices": ["oregano", "basil", "rosemary", "thyme", "garlic"],
+      "typical_cooking_methods": ["roast", "grill", "saute", "braise", "raw salad"],
+      "fasting_traditions": ["Lent (Christian)", "Greek Orthodox fasting days"]
+    },
+    {
+      "key": "middle_eastern",
+      "aliases": ["lebanese", "syrian", "turkish", "persian", "iranian", "iraqi", "jordanian", "palestinian", "arab"],
+      "staples": ["rice", "flatbread (pita/lavash)", "bulgur", "chickpeas", "olive oil"],
+      "common_proteins": ["lamb", "chicken", "beef", "chickpeas", "lentils"],
+      "common_spices": ["sumac", "za'atar", "cumin", "cinnamon", "saffron"],
+      "typical_cooking_methods": ["grill", "stew", "bake", "roast"],
+      "fasting_traditions": ["Ramadan (Muslim)", "Lent (Christian)"]
+    },
+    {
+      "key": "latin_american",
+      "aliases": ["mexican", "central american", "south american", "peruvian", "colombian", "argentinian", "brazilian", "cuban"],
+      "staples": ["corn (tortilla/masa)", "rice", "beans", "plantain", "potato"],
+      "common_proteins": ["beans", "chicken", "beef", "pork", "fish"],
+      "common_spices": ["cumin", "oregano", "chili", "cilantro", "achiote"],
+      "typical_cooking_methods": ["grill (asado)", "stew", "saute", "fry", "slow-simmer"],
+      "fasting_traditions": ["Lent (Catholic)", "Holy Week observances"]
+    },
+    {
+      "key": "west_african",
+      "aliases": ["nigerian", "ghanaian", "senegalese", "ivorian", "malian"],
+      "staples": ["rice", "cassava", "yam", "plantain", "fufu"],
+      "common_proteins": ["fish", "chicken", "goat", "beef", "beans"],
+      "common_spices": ["scotch bonnet", "ginger", "garlic", "thyme", "calabash nutmeg"],
+      "typical_cooking_methods": ["stew", "grill", "fry", "boil"],
+      "fasting_traditions": ["Ramadan (Muslim)", "Christian Lent"]
+    },
+    {
+      "key": "east_african",
+      "aliases": ["ethiopian", "eritrean", "kenyan", "somali", "ugandan", "tanzanian"],
+      "staples": ["injera (teff)", "ugali (maize)", "rice", "lentils", "collard greens"],
+      "common_proteins": ["lentils", "chickpeas", "beef", "chicken", "lamb"],
+      "common_spices": ["berbere", "mitmita", "cardamom", "fenugreek", "cumin"],
+      "typical_cooking_methods": ["stew (wat)", "grill", "boil", "saute"],
+      "fasting_traditions": ["Ethiopian Orthodox fasts (vegan)", "Ramadan (Muslim)"]
+    },
+    {
+      "key": "northern_european",
+      "aliases": ["british", "irish", "scottish", "german", "dutch", "scandinavian", "swedish", "norwegian", "danish", "finnish"],
+      "staples": ["potato", "bread (rye/wheat)", "dairy", "root vegetables", "oats"],
+      "common_proteins": ["fish", "pork", "beef", "chicken", "eggs"],
+      "common_spices": ["dill", "parsley", "caraway", "mustard", "black pepper"],
+      "typical_cooking_methods": ["roast", "boil", "smoke", "cure", "bake"],
+      "fasting_traditions": ["Lent (Christian)", "Advent observances"]
+    },
+    {
+      "key": "eastern_european",
+      "aliases": ["polish", "russian", "ukrainian", "hungarian", "czech", "slovak", "romanian", "bulgarian"],
+      "staples": ["potato", "rye bread", "cabbage", "beets", "buckwheat"],
+      "common_proteins": ["pork", "beef", "chicken", "fish", "eggs"],
+      "common_spices": ["dill", "paprika", "caraway", "garlic", "marjoram"],
+      "typical_cooking_methods": ["braise", "stew", "pickle", "smoke", "bake"],
+      "fasting_traditions": ["Orthodox Christian fasts (vegan)", "Lent"]
+    },
+    {
+      "key": "caribbean",
+      "aliases": ["jamaican", "haitian", "dominican", "puerto rican", "trinidadian", "bajan"],
+      "staples": ["rice", "beans", "plantain", "cassava", "breadfruit"],
+      "common_proteins": ["chicken", "fish", "goat", "pork", "beans"],
+      "common_spices": ["scotch bonnet", "allspice", "thyme", "ginger", "scallion"],
+      "typical_cooking_methods": ["jerk (grill)", "stew", "fry", "curry"],
+      "fasting_traditions": ["Lent (Christian)", "Rastafari Ital observances"]
+    },
+    {
+      "key": "ashkenazi_jewish",
+      "aliases": ["jewish", "eastern european jewish", "kosher"],
+      "staples": ["challah", "rye bread", "potato", "noodles (kugel)", "matzo"],
+      "common_proteins": ["chicken", "beef (kosher)", "fish (gefilte/lox)", "eggs"],
+      "common_spices": ["dill", "parsley", "garlic", "horseradish", "black pepper"],
+      "typical_cooking_methods": ["braise", "roast", "boil", "bake"],
+      "fasting_traditions": ["Yom Kippur", "Tisha B'Av", "Passover (chametz restrictions)"]
+    }
+  ]
+}

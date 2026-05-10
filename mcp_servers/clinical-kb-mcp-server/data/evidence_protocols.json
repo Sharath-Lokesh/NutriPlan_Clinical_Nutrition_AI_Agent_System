@@ -1,0 +1,169 @@
+{
+  "protocols": [
+    {
+      "name": "Mediterranean",
+      "description": "Plant-forward pattern emphasising olive oil, vegetables, legumes, whole grains, fish, and moderate wine.",
+      "indications": ["cardiovascular risk reduction", "type 2 diabetes", "metabolic syndrome", "NAFLD", "primary prevention"],
+      "core_components": [
+        "Olive oil as primary fat",
+        "Vegetables >=3 servings/day",
+        "Legumes >=3 servings/week",
+        "Fish >=2 servings/week",
+        "Whole grains daily",
+        "Red meat <=2 servings/week",
+        "Moderate red wine with meals (optional)"
+      ],
+      "macro_ratio": {"carb_pct": [40, 50], "protein_pct": [15, 20], "fat_pct": [35, 40]},
+      "evidence_grade": "A",
+      "key_trials": ["PREDIMED 2013", "Lyon Diet Heart Study 1999"],
+      "source": "AHA Scientific Statement 2021"
+    },
+    {
+      "name": "DASH",
+      "description": "Dietary Approaches to Stop Hypertension: high in fruits, vegetables, whole grains, low-fat dairy, lean protein; low in sodium, added sugars, and saturated fat.",
+      "indications": ["hypertension", "primary CVD prevention", "type 2 diabetes"],
+      "core_components": [
+        "Vegetables 4-5 servings/day",
+        "Fruits 4-5 servings/day",
+        "Whole grains 6-8 servings/day",
+        "Low-fat dairy 2-3 servings/day",
+        "Lean meat/poultry/fish <=6 oz/day",
+        "Sodium <2300 mg/day (ideal 1500)",
+        "Nuts/seeds/legumes 4-5 servings/week"
+      ],
+      "macro_ratio": {"carb_pct": [50, 55], "protein_pct": [15, 20], "fat_pct": [25, 30]},
+      "evidence_grade": "A",
+      "key_trials": ["DASH 1997", "DASH-Sodium 2001", "PREMIER 2003"],
+      "source": "NHLBI DASH Eating Plan; AHA/ACC 2017"
+    },
+    {
+      "name": "low-FODMAP",
+      "description": "Three-phase elimination diet that restricts fermentable oligo-, di-, monosaccharides, and polyols, then systematically reintroduces them under dietitian supervision.",
+      "indications": ["IBS", "functional bowel disorders", "SIBO (adjunct)"],
+      "core_components": [
+        "Phase 1: 2-6 weeks strict restriction",
+        "Phase 2: structured reintroduction (one FODMAP at a time)",
+        "Phase 3: personalisation based on tolerance",
+        "Avoid: onion, garlic, wheat, lactose, apples, pears, honey, polyols",
+        "Allow: lactose-free dairy, GF grains, low-FODMAP fruit/veg, lean protein"
+      ],
+      "macro_ratio": {"carb_pct": [45, 55], "protein_pct": [15, 20], "fat_pct": [25, 35]},
+      "evidence_grade": "B",
+      "key_trials": ["Halmos et al. 2014 (Gastroenterology)", "Staudacher et al. 2017"],
+      "source": "Monash University; British Dietetic Association 2023"
+    },
+    {
+      "name": "renal-friendly",
+      "description": "Restricted-protein, low-sodium, controlled-potassium and -phosphorus pattern for non-dialysis CKD stages 3-5.",
+      "indications": ["CKD stages 3-5 non-dialysis", "polycystic kidney disease"],
+      "core_components": [
+        "Protein 0.55-0.60 g/kg/day (>=50% high biological value)",
+        "Sodium <2300 mg/day",
+        "Potassium individualised per labs (often <2000-3000 mg/day)",
+        "Phosphorus <800-1000 mg/day; avoid phosphate additives",
+        "Adequate energy 25-35 kcal/kg/day"
+      ],
+      "macro_ratio": {"carb_pct": [50, 60], "protein_pct": [8, 10], "fat_pct": [25, 35]},
+      "evidence_grade": "B",
+      "key_trials": ["MDRD 1994", "Garneata et al. 2016"],
+      "source": "KDOQI 2020"
+    },
+    {
+      "name": "gluten-free",
+      "description": "Strict elimination of gluten-containing grains (wheat, barley, rye) with attention to fibre, iron, folate, calcium, and vitamin D adequacy.",
+      "indications": ["coeliac disease", "non-coeliac gluten sensitivity", "wheat allergy", "dermatitis herpetiformis"],
+      "core_components": [
+        "Eliminate wheat, barley, rye, contaminated oats",
+        "Use rice, quinoa, buckwheat, certified GF oats, corn",
+        "Read labels for hidden gluten (sauces, processed foods)",
+        "Supplement fibre, iron, folate, calcium, vitamin D as needed"
+      ],
+      "macro_ratio": {"carb_pct": [45, 55], "protein_pct": [15, 20], "fat_pct": [25, 35]},
+      "evidence_grade": "A",
+      "key_trials": ["Multiple cohort and crossover studies"],
+      "source": "ACG 2023"
+    },
+    {
+      "name": "low-sodium",
+      "description": "Pattern restricting sodium to <2000-2300 mg/day for blood pressure, heart failure, and CKD management.",
+      "indications": ["hypertension", "heart failure", "CKD", "ascites/cirrhosis"],
+      "core_components": [
+        "Sodium <2300 mg/day (often <2000)",
+        "Avoid processed and cured foods",
+        "Cook from scratch using fresh herbs/spices",
+        "Read nutrition labels (sodium per serving)"
+      ],
+      "macro_ratio": {"carb_pct": [50, 55], "protein_pct": [15, 20], "fat_pct": [25, 30]},
+      "evidence_grade": "A",
+      "key_trials": ["DASH-Sodium 2001", "TOHP I/II"],
+      "source": "AHA 2021; WHO Sodium Guidelines 2012"
+    },
+    {
+      "name": "low-glycaemic",
+      "description": "Carbohydrate-quality focused pattern emphasising low-GI foods to improve post-prandial glycaemia.",
+      "indications": ["type 2 diabetes", "prediabetes", "PCOS", "reactive hypoglycaemia"],
+      "core_components": [
+        "Choose low-GI carbohydrates (legumes, intact whole grains, non-starchy veg)",
+        "Pair carbohydrates with protein/fat to blunt response",
+        "Limit refined grains and sugar-sweetened beverages",
+        "Include vinegar/acidic foods to lower meal GI"
+      ],
+      "macro_ratio": {"carb_pct": [40, 50], "protein_pct": [20, 25], "fat_pct": [30, 35]},
+      "evidence_grade": "B",
+      "key_trials": ["Brand-Miller et al. 2003 (meta-analysis)", "OmniCarb 2014"],
+      "source": "ADA 2024; Diabetes UK Position Statement 2018"
+    },
+    {
+      "name": "ketogenic",
+      "description": "Very-low-carbohydrate, high-fat ketogenic pattern (medical, not lifestyle) used under specialist supervision for refractory epilepsy and select metabolic indications.",
+      "indications": ["refractory paediatric epilepsy", "GLUT1 deficiency", "PDH deficiency"],
+      "core_components": [
+        "Carbohydrate <20-50 g/day",
+        "Fat 70-80% kcal (4:1 classic ratio for epilepsy)",
+        "Protein adequate to prevent loss (1.0-1.5 g/kg)",
+        "Monitor ketones, lipids, growth (paediatric), micronutrients"
+      ],
+      "macro_ratio": {"carb_pct": [5, 10], "protein_pct": [15, 20], "fat_pct": [70, 80]},
+      "evidence_grade": "B",
+      "key_trials": ["Neal et al. 2008 (Lancet Neurology)", "Kossoff International Consensus 2018"],
+      "source": "International Ketogenic Diet Study Group 2018"
+    },
+    {
+      "name": "MIND",
+      "description": "Mediterranean-DASH Intervention for Neurodegenerative Delay: hybrid of Mediterranean and DASH with emphasis on berries, leafy greens, nuts, and olive oil for cognitive protection.",
+      "indications": ["cognitive decline prevention", "Alzheimer's risk reduction"],
+      "core_components": [
+        "Green leafy vegetables >=6 servings/week",
+        "Other vegetables >=1 serving/day",
+        "Berries >=2 servings/week",
+        "Nuts >=5 servings/week",
+        "Olive oil as primary fat",
+        "Whole grains >=3 servings/day",
+        "Fish >=1 serving/week",
+        "Limit red meat, butter, cheese, sweets, fried food"
+      ],
+      "macro_ratio": {"carb_pct": [45, 55], "protein_pct": [15, 20], "fat_pct": [30, 35]},
+      "evidence_grade": "B",
+      "key_trials": ["Morris et al. 2015 (Alzheimer's & Dementia)", "MIND-USA 2023"],
+      "source": "Rush University MIND Diet"
+    },
+    {
+      "name": "plant-based",
+      "description": "Whole-food plant-based pattern centred on vegetables, fruits, legumes, whole grains, nuts, and seeds; may be vegan or near-vegan.",
+      "indications": ["cardiovascular disease", "type 2 diabetes", "obesity", "environmental sustainability"],
+      "core_components": [
+        "Vegetables and fruits at every meal",
+        "Legumes daily",
+        "Whole grains daily",
+        "Nuts/seeds 1-2 servings/day",
+        "Limit/eliminate animal products",
+        "Supplement vitamin B12 if vegan",
+        "Plan iron, zinc, omega-3, calcium, vitamin D, iodine sources"
+      ],
+      "macro_ratio": {"carb_pct": [55, 65], "protein_pct": [12, 18], "fat_pct": [20, 30]},
+      "evidence_grade": "A",
+      "key_trials": ["Adventist Health Study-2", "EPIC-Oxford"],
+      "source": "AND Position on Vegetarian Diets 2016; AHA Scientific Statement 2023"
+    }
+  ]
+}

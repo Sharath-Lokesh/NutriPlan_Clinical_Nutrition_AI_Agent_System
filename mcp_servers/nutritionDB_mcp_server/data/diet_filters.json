@@ -1,0 +1,72 @@
+{
+  "vegan": {
+    "exclude_keywords": [
+      "beef", "pork", "chicken", "turkey", "duck", "lamb", "veal", "bacon", "sausage", "ham",
+      "fish", "salmon", "tuna", "cod", "tilapia", "anchovy", "shrimp", "crab", "lobster",
+      "milk", "butter", "cheese", "cream", "whey", "casein", "yogurt", "lactose",
+      "egg", "albumin", "honey", "gelatin", "lard", "tallow"
+    ],
+    "exclude_categories": [
+      "Beef Products", "Pork Products", "Poultry Products", "Lamb, Veal, and Game Products",
+      "Finfish and Shellfish Products", "Dairy and Egg Products", "Sausages and Luncheon Meats"
+    ]
+  },
+  "vegetarian": {
+    "exclude_keywords": [
+      "beef", "pork", "chicken", "turkey", "duck", "lamb", "veal", "bacon", "sausage", "ham",
+      "fish", "salmon", "tuna", "cod", "tilapia", "anchovy", "shrimp", "crab", "lobster",
+      "gelatin", "lard", "tallow"
+    ],
+    "exclude_categories": [
+      "Beef Products", "Pork Products", "Poultry Products", "Lamb, Veal, and Game Products",
+      "Finfish and Shellfish Products", "Sausages and Luncheon Meats"
+    ]
+  },
+  "gluten-free": {
+    "exclude_keywords": [
+      "wheat", "flour", "bread", "pasta", "semolina", "barley", "rye", "malt", "spelt",
+      "couscous", "bulgur", "farro", "kamut", "triticale", "seitan", "beer"
+    ],
+    "exclude_categories": [
+      "Cereal Grains and Pasta", "Baked Products"
+    ]
+  },
+  "halal": {
+    "exclude_keywords": [
+      "pork", "bacon", "ham", "lard", "alcohol", "wine", "beer", "rum", "vodka", "liquor",
+      "gelatin"
+    ],
+    "exclude_categories": [
+      "Pork Products", "Alcoholic Beverages"
+    ]
+  },
+  "kosher": {
+    "exclude_keywords": [
+      "pork", "bacon", "ham", "lard", "shrimp", "crab", "lobster", "prawn", "shellfish",
+      "catfish", "swordfish", "shark", "eel", "rabbit"
+    ],
+    "exclude_categories": [
+      "Pork Products"
+    ]
+  },
+  "low-fodmap": {
+    "exclude_keywords": [
+      "wheat", "rye", "barley", "onion", "garlic", "leek", "shallot",
+      "apple", "pear", "mango", "watermelon", "honey", "agave",
+      "milk", "yogurt", "soft cheese", "ice cream",
+      "kidney bean", "black bean", "chickpea", "lentil", "soybean",
+      "asparagus", "artichoke", "cauliflower", "mushroom",
+      "high fructose corn syrup", "inulin", "chicory"
+    ],
+    "exclude_categories": []
+  },
+  "dairy-free": {
+    "exclude_keywords": [
+      "milk", "butter", "cheese", "cream", "whey", "casein", "lactose", "yogurt", "ghee",
+      "curd", "buttermilk", "kefir"
+    ],
+    "exclude_categories": [
+      "Dairy and Egg Products"
+    ]
+  }
+}
